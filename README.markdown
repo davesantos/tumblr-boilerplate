@@ -9,6 +9,7 @@ This is a template to help speed up the development of Tumblr themes.
 * Supports most post-types
 * Sticky footer
 * Localization strings
+* Incorporates [Normalize] (http://necolas.github.com/normalize.css/)
 
 __What it doesn't include__
 
