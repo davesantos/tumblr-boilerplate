@@ -4,22 +4,17 @@
 		<title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="if:Show Tumblr Controls" content="1">
 		{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
-
 		<link rel="shortcut icon" href="{Favicon}">
 		<link rel="apple-touch-icon" href="{PortraitURL-128}">
 		<link rel="alternate" type="application/rss+xml" href="{RSS}">
 		
-		<link rel="stylesheet" href="http://static.tumblr.com/n2yg7bp/0xvkkpend/reset.css" media="all" type="text/css">
+		<!--Normalize CSS-->
+		<link rel="stylesheet" href="http://static.tumblr.com/ya8dkyw/eSQln0ko7/normalize.css" type="text/css" media="all" />
 		<style type="text/css">			
-			{block:IfNotShowTumblrControls}iframe#tumblr_controls{display:none;}{/block:IfNotShowTumblrControls}
-			body {background:#fff;font-size:14px;line-height:20px;color:#000;letter-spacing:0.03em;word-spacing:-0.15em;}
-				a {text-decoration:none;-webkit-transition-duration:.3s;-webkit-transition-property:border-bottom;}
-				hr {clear:both;border-color:#000;border-style:solid;border-width:1px 0 0;display:block;height:0;margin:-1px 0 20px;}
-				strong {font-weight:bold;}
-				em {font-style:italic;}
-			html {overflow-y: scroll;}
+			body {background:#fff;}
+			
+			/*Sticky footer*/
 			html, body {height:100%;}
 			#wrapper, #footer {width:940px;margin:0 auto}
 			#wrapper {min-height: 100%;}
@@ -27,28 +22,15 @@
 			#footer {position:relative;margin-top:-60px;height:20px;padding:20px 0;clear:both;}
 			/*Opera Fix*/
 			body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px;/}
-				#header {padding:20px 0;}
-					.post {width:auto}
-					.post ul {list-style:disc;margin-left:20px;}
-					.post ol {list-style:decimal;margin-left:25px;}
-						p, pre, ul, ol, blockquote, dl, form,
-						.post .caption,
-						.post .conversation,
-						.post .conversation .line,
-						.post .link,
-						.post .photo img,
-						.post .quote,
-						.post .text,
-						.post .video,
-						.post .video embed,
-						.post .video object > embed,
-						.post .audio {margin:0 0 20px;}
-						.post .audio .audio_player {height:40px;}
-						.post .answer_form_container {margin-top:20px;}
-						.read_more_container > a {}
-					.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
-					.clearfix:after{clear:both;}
-					.clearfix{zoom:1;}
+			
+			/*Tumblr inherited */
+			.read_more_container a {}
+			iframe#tumblr_controls {]
+
+			/*Fixes*/
+			.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
+			.clearfix:after{clear:both;}
+			.clearfix{zoom:1;}
 		</style>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
