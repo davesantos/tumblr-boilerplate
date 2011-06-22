@@ -15,6 +15,13 @@ __Does not support__
 * Photoset post-type (Same as video post-type)
 * Group Blogs
 
+These were consciously not included to expedite the workflow.
+
+__Resources__
+
+[Tumblr Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
+[Tumblr file hosting](http://www.tumblr.com/themes/upload_static_file)
+
 __Acknowledgements__
 
 * [Normalize CSS] (http://necolas.github.com/normalize.css/)
