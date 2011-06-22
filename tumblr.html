@@ -25,7 +25,7 @@
 			
 			/*Tumblr inherited */
 			.read_more_container a {}
-			iframe#tumblr_controls {]
+			iframe#tumblr_controls {}
 
 			/*Fixes*/
 			.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
@@ -37,7 +37,7 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<div id="header">
+			<header id="header">
 				<h1 id="logo"><a href="/">{Title}</a></h1>
 				{block:Description}<div class="description">{Description}</div>{/block:Description}
 				<ul id="nav">
@@ -50,8 +50,8 @@
 					<input type="text" name="q" value="{SearchQuery}">
 					<input type="submit" value="{lang:Search}">
 				</form>
-			</div>
-			<div id="content">
+			</header>
+			<section id="content">
 				
 				{block:SearchPage}<p>{SearchResultCount} result(s) for <a href="{URLSafeSearchQuery}">{SearchQuery}</a></p>
 				{block:NoSearchResults}<p>No results found for {SearchQuery}</p>{/block:NoSearchResults}{/block:SearchPage}
@@ -141,8 +141,8 @@
 					{block:NextPage}<a id="next" href="{NextPage}">{lang:Next}</a>{/block:NextPage}
 				</div>
 				{/block:Pagination}
-			</div><!--close content-->
+			</section><!--close content-->
 		</div><!--close wrapper-->
-		<div id="footer"></div>
+		<footer id="footer"></footer>
 	</body>
 </html>
