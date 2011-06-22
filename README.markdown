@@ -6,6 +6,11 @@ This is a template to help speed up the development of Tumblr themes.
 
 ### Features ###
 
-* Supports all post-types
+* Supports most post-types
 * Sticky footer
 * Localization strings
+
+__What it doesn't include__
+
+* Notes
+* Photoset post-type (Same as video post-type)
