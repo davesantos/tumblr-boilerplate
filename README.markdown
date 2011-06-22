@@ -8,4 +8,4 @@ This is a template to help speed up the development of Tumblr themes.
 
 * Supports all post-types
 * Sticky footer
-* Localization
+* Localization strings
