@@ -19,8 +19,8 @@ These were consciously not included to expedite the workflow.
 
 __Resources__
 
-[Tumblr Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
-[Tumblr file hosting](http://www.tumblr.com/themes/upload_static_file)
+* [Tumblr Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
+* [Tumblr file hosting](http://www.tumblr.com/themes/upload_static_file)
 
 __Acknowledgements__
 
