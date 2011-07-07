@@ -1,20 +1,20 @@
-Tumblr Boilerplate 0.1 beta
+Tumblr Boilerplate 0.1.1 beta
 ===========================
 
-This is a fully constructed template to help speed up the development of Tumblr themes. The Tumblr theme documentation can be found [here] (http://www.tumblr.com/docs/en/custom_themes) to learn more.
-
+This is a fully constructed template to help speed up the development of Tumblr themes. The goal was to remove redundant tags and use the least amount code to maintain easy theme development.
 
 Features 
 --------
 
+* HTML5
 * Supports most post-types
 * Localization strings
 
 __Does not support__
 
 * Notes
-* Photoset post-type (Same as video post-type)
-* Group Blogs
+* Photoset post-type (Merged with video post-type)
+* Group Blogs (Coming soon as a branch)
 
 These were consciously not included to expedite the workflow.
 

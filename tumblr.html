@@ -56,7 +56,7 @@
 				{block:NoSearchResults}<p>No results found for {SearchQuery}</p>{/block:NoSearchResults}{/block:SearchPage}
 					
 				{block:Posts}
-				<div class="post {TagsAsClasses}">
+				<article class="post {TagsAsClasses}">
 					{block:Date}
 					{block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
 					{block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
@@ -120,7 +120,7 @@
 						{Answer}
 					</div>
 					{/block:Answer}
-				</div>
+				</article>
 				{/block:Posts}
 
 				{block:PermalinkPagination}
