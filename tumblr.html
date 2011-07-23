@@ -94,8 +94,10 @@
 					{/block:Audio}
 					{block:Photo}
 					<div class="photo">
-						{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
-						{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+						<figure>
+							{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+							{block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
+						</figure>
 					</div>
 					{/block:Photo}
 					{block:Chat}
