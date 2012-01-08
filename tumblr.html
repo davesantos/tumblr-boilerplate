@@ -27,9 +27,9 @@
 			iframe#tumblr_controls {}
 
 			/*Fixes*/
-			.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;overflow:hidden;}
+			.clearfix:before,.clearfix:after{content:"";display:table;}
 			.clearfix:after{clear:both;}
-			.clearfix{zoom:1;}
+			.clearfix{*zoom:1;}
 		</style>
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	</head>
@@ -125,8 +125,10 @@
 				{/block:Posts}
 
 				{block:PermalinkPagination}
+				<div class="pagination">
 					{block:PreviousPost}<a href="{PreviousPost}">{lang:Previous post}</a>{/block:PreviousPost}
 					{block:NextPost}<a href="{NextPost}">{lang:Next post}</a>{/block:NextPost}
+				</div>
 				{/block:PermalinkPagination}
 				
 				{block:Pagination}
@@ -139,7 +141,6 @@
 					{/block:JumpPagination}
 
 					{block:NextPage}<a id="next" href="{NextPage}">{lang:Next}</a>{/block:NextPage}
-				</div>
 				{/block:Pagination}
 			</section><!--close content-->
 		</div><!--close wrapper-->
