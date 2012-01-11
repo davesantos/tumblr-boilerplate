@@ -45,7 +45,7 @@
 					{block:PermalinkPage}<li><a href="/">Index</a></li>{/block:PermalinkPage}
 				</ul>	
 				<form id="search" action="/search" method="get">
-					<input type="text" placeholder="Search" name="q" value="{SearchQuery}">
+					<input type="text" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
 					<input type="submit" value="{lang:Search}">
 				</form>
 			</header>
@@ -126,21 +126,21 @@
 
 				{block:PermalinkPagination}
 				<div class="pagination">
-					{block:PreviousPost}<a href="{PreviousPost}">{lang:Previous post}</a>{/block:PreviousPost}
-					{block:NextPost}<a href="{NextPost}">{lang:Next post}</a>{/block:NextPost}
+					{block:PreviousPost}<a class="prev"href="{PreviousPost}">{lang:Previous post}</a>{/block:PreviousPost}
+					{block:NextPost}<a class="next" href="{NextPost}">{lang:Next post}</a>{/block:NextPost}
 				</div>
 				{/block:PermalinkPagination}
 				
 				{block:Pagination}
 				<div class="pagination">
-					{block:PreviousPage}<a id="previous" href="{PreviousPage}">{lang:Previous}</a>{/block:PreviousPage}
+					{block:PreviousPage}<a class="prev" href="{PreviousPage}">{lang:Previous}</a>{/block:PreviousPage}
 
 					{block:JumpPagination length="5"}
 						{block:CurrentPage}<span class="current-page">{PageNumber}</span>{/block:CurrentPage}
 						{block:JumpPage}<a class="jump-page" href="{URL}">{PageNumber}</a>{/block:JumpPage}
 					{/block:JumpPagination}
 
-					{block:NextPage}<a id="next" href="{NextPage}">{lang:Next}</a>{/block:NextPage}
+					{block:NextPage}<a class="next" href="{NextPage}">{lang:Next}</a>{/block:NextPage}
 				{/block:Pagination}
 			</section><!--close content-->
 		</div><!--close wrapper-->
