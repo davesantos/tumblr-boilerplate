@@ -15,7 +15,7 @@ __Does not support__
 * Photoset post-type (Merged with video post-type)
 * Group Blogs (Coming soon as a branch)
 
-These were consciously not included to expedite the workflow.
+These were intentionally not included to expedite the workflow.
 
 ## Resources
 
