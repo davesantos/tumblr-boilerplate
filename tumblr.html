@@ -9,7 +9,7 @@
 		<link rel="shortcut icon" href="{Favicon}">
 		<link rel="alternate" type="application/rss+xml" href="{RSS}">		
 		<!--Normalize CSS-->
-		<link rel="stylesheet" href="http://static.tumblr.com/cqczc5x/BiElv2q7r/normalize.css" type="text/css" media="all">
+		<link rel="stylesheet" href="http://static.tumblr.com/cqczc5x/4n1m0ybpr/normalize.css" type="text/css" media="all">
 		<style type="text/css">
 			/*Sticky footer*/
 			html, body {height:100%;}
@@ -60,7 +60,6 @@
 					{block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
 					{block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
 					{/block:Date}
-					{block:IndexPage}<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>{/block:IndexPage}
 					{block:Text}
 					<div class="text">
 						{block:Title}<h3>{Title}</h3>{/block:Title}
@@ -121,6 +120,7 @@
 						{Answer}
 					</div>
 					{/block:Answer}
+					{block:IndexPage}<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>{/block:IndexPage}
 				</article>
 				{/block:Posts}
 
