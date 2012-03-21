@@ -99,6 +99,17 @@
 						</figure>
 					</div>
 					{/block:Photo}
+					{block:Photoset}
+					<div class="photoset">
+						{block:Photos}
+						<figure>
+							{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+							{block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
+						</figure>
+					    {/block:Photos}
+						{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+					</div>
+					{/block:Photoset}
 					{block:Chat}
 					<div class="chat">
 						{block:Title}<h3>{Title}</h3>{/block:Title}
