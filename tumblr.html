@@ -23,6 +23,7 @@
 		body {background:#fff;}
 		
 		/*Tumblr inherited */
+		.search_query {}
 		.read_more_container a {}
 		iframe#tumblr_controls {}
 
@@ -51,8 +52,8 @@
 		</header>
 		<section id="content">
 			
-			{block:SearchPage}<p>{SearchResultCount} result(s) for <a href="{URLSafeSearchQuery}">{SearchQuery}</a></p>
-			{block:NoSearchResults}<p>No results found for {SearchQuery}</p>{/block:NoSearchResults}{/block:SearchPage}
+			{block:SearchPage}<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
+			{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}{/block:SearchPage}
 				
 			{block:Posts}
 			<article class="post {TagsAsClasses}">
