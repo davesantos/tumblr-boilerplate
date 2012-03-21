@@ -4,7 +4,6 @@ This is a fully constructed template to help speed up the development of Tumblr 
 
 ## Features 
 
-
 * HTML5
 * Supports most post-types
 * Localization strings
@@ -12,8 +11,7 @@ This is a fully constructed template to help speed up the development of Tumblr 
 __Does not support__
 
 * Notes
-* Photoset post-type (Merged with video post-type)
-* Group Blogs (Coming soon as a branch)
+* Group Blogs
 
 These were intentionally not included to expedite the workflow.
 
@@ -29,6 +27,10 @@ These were intentionally not included to expedite the workflow.
 
 
 ## Changes 
+
+### 03/20/12 - Tumblr Boilerplate 1.0.2
+
+- Added Photoset
 
 ### 01/10/12 - Tumblr Boilerplate 1.0
 
