@@ -30,7 +30,8 @@ These were intentionally not included to expedite the workflow.
 
 ### 03/20/12 - Tumblr Boilerplate 1.0.3
 
-- Removed wrapper tag
+- Removed wrapper & footer tag
+- Removed sticky footer
 
 ### 03/20/12 - Tumblr Boilerplate 1.0.2
 
