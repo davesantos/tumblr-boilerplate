@@ -1,6 +1,6 @@
 # Tumblr Boilerplate
 
-This is a fully constructed template to help speed up the development of Tumblr themes. The goal was to remove redundant tags and use the least amount code to maintain easy theme development.
+This is a fully constructed template to help speed up the development of Tumblr themes. The goal was to remove redundant tags, keeping it lean to maintain fast and smooth theme development. Feel free to contribute any changes you might find helpful for others.
 
 ## Features 
 
