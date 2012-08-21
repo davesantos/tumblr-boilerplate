@@ -5,7 +5,7 @@ This is a fully constructed template to help speed up the development of Tumblr 
 ## Features 
 
 * HTML5
-* Supports most post-types
+* Supports all post-types
 * Localization strings
 
 __Does not support__
@@ -24,6 +24,7 @@ These were intentionally not included to expedite the workflow.
 
 * [Normalize CSS] (http://necolas.github.com/normalize.css/)
 * [HTML 5 Boilerplate] (http://html5boilerplate.com/)
+* [HTML 5 Shim] (https://code.google.com/p/html5shiv/)
 
 
 ## Changes 
