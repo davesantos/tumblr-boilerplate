@@ -29,6 +29,10 @@ These were intentionally not included to expedite the workflow.
 
 ## Changes
 
+### 10/09/12 - Tumblr Boilerplate 1.0.5
+
+- Added string to tag page
+
 ### 10/08/12 - Tumblr Boilerplate 1.0.4
 
 - Replaced figure & figcaption tag with a div
