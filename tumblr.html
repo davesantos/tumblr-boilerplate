@@ -39,10 +39,11 @@
 	</header>
 	<section class="content">
 
+		<div class="result">
 		{block:SearchPage}<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
 		{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}{/block:SearchPage}
-
 		{block:TagPage}<p>{lang:TagResultCount posts tagged Tag 3}</p>{/block:TagPage}
+		<div>
 
 		{block:Posts}
 		<article class="post {TagsAsClasses}">
