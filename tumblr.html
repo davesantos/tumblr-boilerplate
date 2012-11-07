@@ -39,11 +39,14 @@
 	</header>
 	<section class="content">
 
+
+		{block:SearchPage}
 		<div class="result">
-		{block:SearchPage}<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
-		{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}{/block:SearchPage}
-		{block:TagPage}<p>{lang:TagResultCount posts tagged Tag 3}</p>{/block:TagPage}
-		<div>
+			<p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
+			{block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}
+		</div>
+		{/block:SearchPage}
+		{block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage}
 
 		{block:Posts}
 		<article class="post {TagsAsClasses}">
