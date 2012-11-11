@@ -29,6 +29,10 @@ These were intentionally not included to expedite the workflow.
 
 ## Changes
 
+### 11/10/12 - Tumblr Boilerplate 1.0.6
+
+- Added responsive CSS with breakpoints
+
 ### 10/09/12 - Tumblr Boilerplate 1.0.5
 
 - Added string to tag page
