@@ -6,7 +6,7 @@ This is a fully constructed template to help speed up the development of Tumblr 
 
 * HTML5
 * Supports all post-types
-* Localization strings
+* [Localization] (http://www.tumblr.com/docs/en/custom_themes#localization) strings
 
 __Does not support__
 
