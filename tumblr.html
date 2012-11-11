@@ -2,7 +2,6 @@
 <html lang="{block:English}en{/block:English}{block:French}fr{/block:French}{block:German}de{/block:German}{block:Japanese}ja{/block:Japanese}{block:Italian}it{/block:Italian}{block:Spanish}es{/block:Spanish}{block:Polish}pl{/block:Polish}">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
 	{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
 	<link rel="apple-touch-icon" href="{PortraitURL-128}">
@@ -20,6 +19,28 @@
 		.clearfix:before,.clearfix:after{content:"";display:table;}
 		.clearfix:after{clear:both;}
 		.clearfix{*zoom:1;}
+
+
+
+		@media only screen and (max-width: 1023px) {
+
+			body {
+
+				background:red;
+
+			}
+
+		}
+
+		@media handheld, only screen and (max-width: 767px) {
+
+			body {
+
+				background:yellow;
+			}
+
+
+		}
 	</style>
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
