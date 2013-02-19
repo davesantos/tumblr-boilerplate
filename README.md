@@ -34,6 +34,7 @@ These were intentionally not included to expedite the workflow.
 
 - Added [Panorama Post](http://www.tumblr.com/docs/en/custom_themes#panorama-posts) block
 - Removed media query breakpoints
+- Updated Normalize to v2.1.0
 
 ### 11/10/12 - Tumblr Boilerplate 1.0.6
 
