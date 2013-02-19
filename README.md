@@ -1,4 +1,4 @@
-# Tumblr Boilerplate
+# Tumblr Boilerplate - 1.0.7
 
 This is a fully constructed template to help speed up the development of Tumblr themes. The goal was to remove redundant tags, keeping it lean to maintain fast and smooth theme development. Feel free to contribute any changes you might find helpful for others.
 
@@ -19,6 +19,7 @@ These were intentionally not included to expedite the workflow.
 
 * [Tumblr Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
 * [Tumblr file hosting](http://www.tumblr.com/themes/upload_static_file)
+* [Latest Tumblr features](http://staff.tumblr.com/tagged/features)
 
 ## Acknowledgements
 
