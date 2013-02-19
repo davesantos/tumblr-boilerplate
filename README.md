@@ -29,6 +29,11 @@ These were intentionally not included to expedite the workflow.
 
 ## Changes
 
+### 2/18/13 - Tumblr Boilerplate 1.0.7
+
+- Added [Panorama Post](http://www.tumblr.com/docs/en/custom_themes#panorama-posts) block
+- Removed media query breakpoints
+
 ### 11/10/12 - Tumblr Boilerplate 1.0.6
 
 - Added responsive CSS with breakpoints
