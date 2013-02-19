@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
 	{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
+
 	<link rel="apple-touch-icon" href="{PortraitURL-128}">
 	<link rel="shortcut icon" href="{Favicon}">
 	<link rel="alternate" type="application/rss+xml" href="{RSS}">
@@ -13,7 +14,10 @@
 	<link rel="stylesheet" href="http://static.tumblr.com/cqczc5x/ZZVmej6l8/normalize.css" type="text/css" media="all">
 	<style type="text/css">
 
-		img {max-width: 100%;height: auto !important;}
+		img, video, object, embed {
+			max-width: 100%;
+			height: auto !important;
+		}
 
 		.clearfix {zoom:1;}
 		.clearfix:before, .clearfix:after {
@@ -27,16 +31,6 @@
 		iframe#tumblr_controls {}
 		.search_query {}
 		.read_more_container a {}
-
-		@media only screen and (max-width: 1023px) {
-
-
-		}
-
-		@media handheld, only screen and (max-width: 767px) {
-
-
-		}
 
 	</style>
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -105,19 +99,27 @@
 			{/block:Audio}
 			{block:Photo}
 			<div class="photo">
-					{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+					{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>{LinkCloseTag}
 					{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
 			</div>
 			{/block:Photo}
 			{block:Photoset}
 			<div class="photoset">
 				{block:Photos}
-					<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+					<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
 					{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
 			    {/block:Photos}
 				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
 			</div>
 			{/block:Photoset}
+
+			{block:Panorama}
+			<div class="panorama">
+			    {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
+			    {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+			</div>
+			{/block:Panorama}
+
 			{block:Chat}
 			<div class="chat">
 				{block:Title}<h3>{Title}</h3>{/block:Title}
