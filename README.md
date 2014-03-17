@@ -31,7 +31,7 @@ These were intentionally not included to expedite the workflow.
 
 ### 3/17/14 - Tumblr Boilerplate 1.0.8
 
-- Updated Normalize CSs to v3.0.0
+- Updated Normalize CSS to v3.0.0
 - Removed *clearfix*
 
 ### 2/18/13 - Tumblr Boilerplate 1.0.7
