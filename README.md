@@ -1,6 +1,6 @@
-# Tumblr Boilerplate - 1.0.7
+# Tumblr Boilerplate - 1.0.8
 
-This is a fully constructed template to help speed up the development of Tumblr themes. The goal was to remove redundant tags, keeping it lean to maintain fast and smooth theme development. Feel free to contribute any changes you might find helpful for others.
+This is a fully constructed Tumblr template that works out of the box to assist in speeding up the theme development process.The goal was to strip redundant tags in order to keep the process rapid & smooth. Feel free to contribute any changes you might find helpful for others.
 
 ## Features
 
@@ -27,8 +27,11 @@ These were intentionally not included to expedite the workflow.
 * [HTML 5 Boilerplate] (http://html5boilerplate.com/)
 * [HTML 5 Shim] (https://code.google.com/p/html5shiv/)
 
-
 ## Changes
+
+### 3/17/14 - Tumblr Boilerplate 1.0.8
+
+- Updated Normalize CSs to v3.0.0
 
 ### 2/18/13 - Tumblr Boilerplate 1.0.7
 
