@@ -1,0 +1,22 @@
+{
+  "name": "tumblr-boilerplate",
+  "version": "1.0.8",
+  "homepage": "https://github.com/davesantos/tumblr-boilerplate",
+  "authors": [
+    "Dave Santos <info@davesantos.com>"
+  ],
+  "description": "An HTML5 boilerplate Tumblr theme for rapid development.",
+  "main": "tumblr.html",
+  "keywords": [
+    "tumblr",
+    "theme",
+    "boilerplate",
+    "html5"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
