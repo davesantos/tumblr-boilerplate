@@ -14,7 +14,12 @@ __Does not support__
 * Notes
 * Group Blogs
 
-These were intentionally not included to expedite the workflow.
+(These were intentionally not included to expedite the workflow.)
+
+###Installation
+
+* [Bower](http://bower.io/): `bower install tumblr-boilerplate`
+* [Download](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip).
 
 ### Resources
 
