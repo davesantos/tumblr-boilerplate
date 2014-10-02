@@ -1,7 +1,5 @@
 .DS_Store
-Thumbs.db
 .save
 .sass-cache
-
 node_modules
 
