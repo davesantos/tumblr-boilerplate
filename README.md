@@ -31,6 +31,6 @@ __Does not support__
 
 ###  License
 
-Released under the terms of the [MIT license](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md)
+tumblr-boilerplate is freely distributable under the terms of the [MIT license](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md).
 
 
