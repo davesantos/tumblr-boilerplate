@@ -19,10 +19,10 @@
 	</style>
 </head>
 <body>
-	<header class="header" role="banner">
+	<header class="header">
 		<h1 id="logo"><a href="/">{Title}</a></h1>
 		{block:Description}<div class="description">{Description}</div>{/block:Description}
-		<ul class="nav" role="navigation">
+		<ul class="nav">
 			{block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
 			<li><a href="/archive">{lang:Archive}</a></li>
 			{block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
