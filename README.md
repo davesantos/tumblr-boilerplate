@@ -1,12 +1,12 @@
-Tumblr Boilerplate - 1.0.8
+Tumblr Boilerplate - 1.1.0
 ------
 
-This is a fully constructed Tumblr template that works out of the box. The goal was to strip redundant tags to keep the process rapid & smooth. Feel free to contribute any changes you might find helpful for others.
+This is a fully constructed Tumblr template that works out of the box. Style it however you wish. The goal was to strip redundant tags to keep the development process rapid. Feel free to contribute any changes you might find helpful for others.
 
 ###Installation
 
 * [Bower](http://bower.io/): `bower install tumblr-boilerplate`
-* [Download](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip).
+* [Download](https://github.com/davesantos/tumblr-boilerplate/archive/master).
 
 ### Features
 
