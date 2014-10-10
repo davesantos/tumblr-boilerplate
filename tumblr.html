@@ -8,21 +8,28 @@
 	{block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
 	<link rel="apple-touch-icon" href="{PortraitURL-128}">
 	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="canonical" href="{block:IndexPage}{BlogURL}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}">
 	<link rel="alternate" type="application/rss+xml" href="{RSS}">
-	<!--Normalize 3.0.0 CSS-->
-	<link rel="stylesheet" href="http://static.tumblr.com/cqczc5x/FJTn2lpnz/normalize.css" type="text/css" media="all">
+	{block:Hidden}
+
+		<!-- Custom theme options here will be hidden when viewing the source code. -->
+
+	{/block:Hidden}
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" type="text/css" media="all">
 	<style type="text/css">
-		{CustomCSS}
 		/*Tumblr inherited */
+		body {background:{BackgroundColor};}
 		iframe#tumblr_controls {}
-		.search_query {}
-		.read_more_container a {}
+		{CustomCSS}
 	</style>
 </head>
 <body>
+
 	<header class="header">
 		{block:ShowTitle}<h1 id="logo"><a href="/">{Title}</a></h1>{/block:ShowTitle}
-		{block:Description}<div class="description">{Description}</div>{/block:Description}
+		{block:ShowDescription}{block:Description}<div class="description">{Description}</div>{/block:Description}{/block:ShowDescription}
+		{block:ShowHeaderImage}<img src="{HeaderImage}">{/block:ShowHeaderImage}
+		{block:ShowAvatar}<img src="{PortraitURL-128}">{/block:ShowAvatar}
 		<ul class="nav">
 			{block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
 			<li><a href="/archive">{lang:Archive}</a></li>
@@ -33,6 +40,7 @@
 			<input type="submit" value="{lang:Search}">
 		</form>
 	</header>
+
 	<section class="content">
 		{block:SearchPage}
 		<div class="result">
@@ -147,7 +155,7 @@
 		{/block:Pagination}
 	</section><!--close content-->
 	<footer class="footer">
-		<p>{CopyrightYears}</p>
+		<small>{block:ShowTitle}{Title} {/block:ShowTitle}&copy; {CopyrightYears}</small>
 	</footer>
 </body>
 </html>
