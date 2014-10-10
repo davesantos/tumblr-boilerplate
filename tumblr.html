@@ -21,7 +21,7 @@
 </head>
 <body>
 	<header class="header">
-		<h1 id="logo"><a href="/">{Title}</a></h1>
+		{block:ShowTitle}<h1 id="logo"><a href="/">{Title}</a></h1>{/block:ShowTitle}
 		{block:Description}<div class="description">{Description}</div>{/block:Description}
 		<ul class="nav">
 			{block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
@@ -146,5 +146,8 @@
 		</div>
 		{/block:Pagination}
 	</section><!--close content-->
+	<footer class="footer">
+		<p>{CopyrightYears}</p>
+	</footer>
 </body>
 </html>
