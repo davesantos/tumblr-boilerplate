@@ -11,14 +11,16 @@
 	<link rel="canonical" href="{block:IndexPage}{BlogURL}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}">
 	<link rel="alternate" type="application/rss+xml" href="{RSS}">
 	{block:Hidden}
-
-		<!-- Custom theme options here will be hidden when viewing the source code. -->
-
-	{/block:Hidden}
+ 		<!-- Custom theme options in the 'Hidden' block will not show when viewing the source code.
+			https://www.tumblr.com/docs/en/custom_themes#theme-options
+		 -->
+ 	{/block:Hidden}
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" type="text/css" media="all">
 	<style type="text/css">
 		/*Tumblr inherited */
 		body {background:{BackgroundColor};}
+		h1 > a {color:{TitleColor};}
+		a {color:{AccentColor}}
 		iframe#tumblr_controls {}
 		{CustomCSS}
 	</style>
