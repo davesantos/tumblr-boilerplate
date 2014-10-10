@@ -6,7 +6,7 @@ This is a fully constructed Tumblr template that works out of the box. Style it 
 ###Installation
 
 * [Bower](http://bower.io/): `bower install tumblr-boilerplate`
-* [Download](https://github.com/davesantos/tumblr-boilerplate/archive/master).
+* [Download](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip).
 
 ### Features
 
