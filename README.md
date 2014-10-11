@@ -1,4 +1,4 @@
-Tumblr Boilerplate - 1.1.0
+Tumblr Boilerplate - 2.0.0
 ------
 
 This is a fully constructed Tumblr template that works out of the box. Style it however you wish. The goal was to strip redundant tags to keep the development process rapid. Feel free to contribute any changes you might find helpful for others.
@@ -11,13 +11,15 @@ This is a fully constructed Tumblr template that works out of the box. Style it 
 ### Features
 
 * HTML5
-* Supports all post-types
+* Supports all [post](https://www.tumblr.com/docs/en/custom_themes#posts) types
+* Theme options (header image, avatar image, background color, accent color, etc) from [global appeareances](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
 * [Localization] (http://www.tumblr.com/docs/en/custom_themes#localization) strings
+
 
 __Does not support__
 
-* Notes
-* Group Blogs
+* [Notes](https://www.tumblr.com/docs/en/custom_themes#notes)
+* [Group Blogs](https://www.tumblr.com/docs/en/custom_themes#group-blogs)
 
 (These were intentionally not included to expedite the workflow.)
 
