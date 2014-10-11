@@ -52,86 +52,96 @@
 		{block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage}
 
 		{block:Posts}
-		<article class="post {TagsAsClasses}">
+		<article class="post {PostType} {TagsAsClasses}">
 			{block:Date}
 			{block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
 			{block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
 			{/block:Date}
+
 			{block:Text}
-			<div class="text">
-				{block:Title}<h3>{Title}</h3>{/block:Title}
-				{Body}
-			</div>
+			    {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+			    {block:Body}
+			    <div class="body-text">
+			        {Body}
+			    </div>
+			    {/block:Body}
 			{/block:Text}
+
 			{block:Quote}
-			<div class="quote">
-				<blockquote class="words {Length}">&#8220;{Quote}&#8221;</blockquote>
-				{block:Source}<p class="source">&mdash; {Source}</p>{/block:Source}
-			</div>
+			<blockquote class="words {Length}">&#8220;{Quote}&#8221;</blockquote>
+			{block:Source}<p class="source">&mdash; {Source}</p>{/block:Source}
 			{/block:Quote}
+
 			{block:Link}
-			<div class="link">
-				<h3><a href="{URL}" {Target}>{Name}</a></h3>
-				{block:Description}<div class="caption">{Description}</div>{/block:Description}
-			</div>
+			<h2><a href="{URL}" {Target}>{Name}</a></h2>
+			{block:Description}<div class="caption">{Description}</div>{/block:Description}
 			{/block:Link}
-			{block:Video}
-			<div class="video">
-				{Video-500}
-				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-			</div>
-			{/block:Video}
+
+
+
+
 			{block:Audio}
-			<div class="audio">
-				{block:AlbumArt}<img src="{AlbumArtURL}" alt="">{/block:AlbumArt}
-				{AudioPlayerBlack}
-				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+			{block:AlbumArt}<img src="{AlbumArtURL}" alt="">{/block:AlbumArt}
+			<div class="audio-player">
+				{block:AudioEmbed}
+				    {AudioEmbed color="white"}
+				{/block:AudioEmbed}
+				{block:AudioPlayer}{AudioPlayerBlack}{/block:AudioPlayer}
 			</div>
+			{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
 			{/block:Audio}
+
 			{block:Photo}
-			<div class="photo">
-					{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>{LinkCloseTag}
-					{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-			</div>
+			<figure class="{block:HighRes}high-res{/block:HighRes}{block:Caption} with-caption{/block:Caption}" data-photo-width="{PhotoWidth-HighRes}">
+				{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}">{LinkCloseTag}
+			    {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
+			</figure>
 			{/block:Photo}
+
 			{block:Photoset}
-			<div class="photoset">
-				{block:Photos}
-					<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
-					{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-			    {/block:Photos}
-				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-			</div>
+			<figure{block:Caption} class="with-caption"{/block:Caption}>
+			    {Photoset}
+			    {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
+			</figure>
 			{/block:Photoset}
 
 			{block:Panorama}
-			<div class="panorama">
-			    {LinkOpenTag}<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
-			    {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-			</div>
+			<figure{block:Caption} class="with-caption"{/block:Caption}>
+		    {LinkOpenTag}<img src="{PhotoURL-Panorama}" width="{PhotoWidth-Panorama}" height="{PhotoHeight-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
+		    {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
+			</figure>
 			{/block:Panorama}
+
+			{block:Video}
+			<figure{block:Caption} class="with-caption"{/block:Caption}>
+			    <div class="video-player">
+			        {Video-700}
+			    </div>
+			    {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
+			</figure>
+			{/block:Video}
+
 			{block:Chat}
-			<div class="chat">
-				{block:Title}<h3>{Title}</h3>{/block:Title}
-				<ul class="conversation">
-					{block:Lines}
-					<li class="line {Alt}">
-						{block:Label}<span class="person">{Label}</span>{/block:Label}
-						<span class="person-said">{Line}</span>
-					</li>
-					{/block:Lines}
-				</ul>
-			</div>
+			{block:Title}<h2>{Title}</h2>{/block:Title}
+			<ul class="conversation">
+				{block:Lines}
+				<li class="line {Alt}">
+					{block:Label}<span class="person">{Label}</span>{/block:Label}
+					<span class="person-said">{Line}</span>
+				</li>
+				{/block:Lines}
+			</ul>
 			{/block:Chat}
+
 			{block:Answer}
-			<div class="answer">
 				<img src="{AskerPortraitURL-40}">
 				{Asker}
 				{Question}
 				{Answer}
-			</div>
 			{/block:Answer}
+
 			{block:IndexPage}<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>{/block:IndexPage}
+
 		</article>
 		{/block:Posts}
 
