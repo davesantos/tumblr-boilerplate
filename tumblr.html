@@ -134,10 +134,23 @@
 			{/block:Chat}
 
 			{block:Answer}
-				<img src="{AskerPortraitURL-40}">
-				{Asker}
-				{Question}
-				{Answer}
+			<section class="question">
+				<img src="{AskerPortraitURL-48}">
+				<div class="asker">{Asker} asked:</div>
+				<div class="asker-question">
+					{Question}
+				</div>
+			</section>
+			{block:Answerer}
+	        <section class="answerer">
+	         	<img src="{AnswererPortraitURL-48}">
+ 				<p>{Answerer} answered:</p>
+	        	<div class="answerer-answer">
+	        		{Answer}
+				</div>
+	        </section>
+			{/block:Answerer}
+			<div class="replies">{Replies}</div>
 			{/block:Answer}
 
 			{block:IndexPage}<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>{/block:IndexPage}
