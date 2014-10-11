@@ -77,9 +77,6 @@
 			{block:Description}<div class="caption">{Description}</div>{/block:Description}
 			{/block:Link}
 
-
-
-
 			{block:Audio}
 			{block:AlbumArt}<img src="{AlbumArtURL}" alt="">{/block:AlbumArt}
 			<div class="audio-player">
@@ -100,7 +97,10 @@
 
 			{block:Photoset}
 			<figure{block:Caption} class="with-caption"{/block:Caption}>
-			    {Photoset}
+				{block:Photos}
+				<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+			    {/block:Photos}
 			    {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
 			</figure>
 			{/block:Photoset}
@@ -154,7 +154,6 @@
 			{/block:Answer}
 
 			{block:IndexPage}<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>{/block:IndexPage}
-
 		</article>
 		{/block:Posts}
 
