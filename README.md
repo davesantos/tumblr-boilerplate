@@ -11,8 +11,9 @@ This is a fully constructed Tumblr template that works out of the box. Style it 
 ### Features
 
 * HTML5
+* [Normalize CSS](http://necolas.github.com/normalize.css/) from a CDN
 * Supports all [post](https://www.tumblr.com/docs/en/custom_themes#posts) types
-* Theme options (header image, avatar image, background color, accent color, etc) from [global appeareances](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
+* Theme options from [global appeareance](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
 * [Localization] (http://www.tumblr.com/docs/en/custom_themes#localization) strings
 
 
@@ -28,7 +29,6 @@ __Does not support__
 * [Tumblr Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
 * [Tumblr file hosting](http://www.tumblr.com/themes/upload_static_file)
 * [Latest Tumblr features](http://staff.tumblr.com/tagged/features)
-* [Normalize CSS] (http://necolas.github.com/normalize.css/)
 * [HTML 5 Boilerplate] (http://html5boilerplate.com/)
 
 ###  License
