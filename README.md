@@ -1,7 +1,7 @@
 Tumblr Boilerplate - 2.0.0
 ------
 
-This is a fully constructed Tumblr template that works out of the box. Style it however you wish. The goal was to strip redundant tags to keep the development process rapid. Feel free to contribute any changes you might find helpful for others.
+This is a fully functional Tumblr theme that works out of the box. Style it however you wish. The goal was to strip redundant tags to keep the development process rapid. Contribute any pull requests you might find helpful for others.
 
 ###Installation
 
@@ -16,13 +16,16 @@ This is a fully constructed Tumblr template that works out of the box. Style it 
 * Theme options from [global appeareance](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
 * [Localization] (http://www.tumblr.com/docs/en/custom_themes#localization) strings
 
-
-__Does not support__
+__Theme does not support__
 
 * [Notes](https://www.tumblr.com/docs/en/custom_themes#notes)
 * [Group Blogs](https://www.tumblr.com/docs/en/custom_themes#group-blogs)
 
-(These were intentionally not included to expedite the workflow.)
+(Purposely not included to expedite workflow in the various uses)
+
+###Disclaimer
+
+Tumblr will auto-inject extra code & scripts into the final output of your page. This is out of the developers' control. Running it through a HTML Validator or Page Speed will spit out warnings &errors.
 
 ### Resources
 
