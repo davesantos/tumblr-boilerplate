@@ -7,6 +7,9 @@ $base-line-height: 36px
 $rhythm-unit: em
 +establish-baseline
 
+$default-transition-duration : 0.3s
+$default-transition-function : ease
+
 $base-font-color: #000
 $base-background-color: #eee
 $color-accent: #A7914F
@@ -76,6 +79,7 @@ h3
 .description
 	+full
 	margin-bottom: rhythm(1)
+	margin-top: 0
 	color: $color-accent
 
 .slide
@@ -99,11 +103,15 @@ ul
 	li
 		display: inline-block
 		a.button
+			+single-transition(background)
+			display: block
 			margin-right: 20px
 			background: darken($color-accent, 10%)
 			padding: 16px
 			color: $base-background-color
 			+box-shadow(darken($color-accent, 20%) 5px 5px 0)
+			&:hover
+				background: $color-accent
 
 .frag
 	background: rgba(255,255,255, 0.5)

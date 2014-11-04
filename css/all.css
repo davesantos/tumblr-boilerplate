@@ -81,6 +81,7 @@ h3 {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 1.63636em;
+  margin-top: 0;
   color: #A7914F;
 }
 
@@ -117,6 +118,11 @@ ul li {
   display: inline-block;
 }
 ul li a.button {
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  display: block;
   margin-right: 20px;
   background: #84733f;
   padding: 16px;
@@ -124,6 +130,9 @@ ul li a.button {
   -moz-box-shadow: #62552e 5px 5px 0;
   -webkit-box-shadow: #62552e 5px 5px 0;
   box-shadow: #62552e 5px 5px 0;
+}
+ul li a.button:hover {
+  background: #A7914F;
 }
 
 .frag {
