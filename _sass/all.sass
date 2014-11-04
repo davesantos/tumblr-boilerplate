@@ -12,7 +12,7 @@ $default-transition-function : ease
 
 $base-font-color: #000
 $base-background-color: #eee
-$color-accent: #A7914F
+$color-accent: #a58429
 $color-stage: #0F5F80
 $color-footer: darken($base-background-color, 10%)
 
@@ -56,11 +56,26 @@ h2
 		display: inline-block
 		// +trailing-border(2px)
 		&::after
+			+animation(underline 500ms cubic-bezier(.35,-0.01,.18,1.01))
+			+animation-fill-mode(forwards)
+			+animation-delay(2s)
 			content: ''
 			height: 10px
 			background: $color-accent
 			display: block
-			width: inherit
+			width: 0
+
++keyframes(underline)
+	from
+		width: 0
+	to
+		width: 100%
+
++keyframes(fadeIn)
+	from
+		+opacity(0)
+	to
+		+opacity(1)
 
 h3
 	+adjust-font-size-to(20px)
@@ -76,11 +91,19 @@ h3
 ///////////////////////////////////////////////////////////////////
 .headline
 	+adjust-font-size-to(28px)
+	+animation(fadeIn 500ms)
+	+animation-fill-mode(forwards)
+	+animation-delay(500ms)
+	+opacity(0)
 	text-align: center
 	color: $base-background-color
 
 .description
 	+full
+	+animation(fadeIn 500ms)
+	+animation-fill-mode(forwards)
+	+animation-delay(1s)
+	+opacity(0)
 	margin-bottom: rhythm(1)
 	margin-top: 0
 	color: $color-accent
@@ -108,9 +131,9 @@ ul
 		a.button
 			+single-transition(background)
 			display: block
-			margin-right: 20px
+			margin-right: 10px
 			background: darken($color-accent, 10%)
-			padding: 16px
+			padding: 3px 10px
 			color: $base-background-color
 			+box-shadow(darken($color-accent, 20%) 5px 5px 0)
 			&:hover
