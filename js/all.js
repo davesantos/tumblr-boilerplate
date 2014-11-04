@@ -6,6 +6,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-4820278-13', 'auto');
 ga('require', 'displayfeatures');
+ga('require', 'linkid', 'linkid.js');
 ga('send', 'pageview');
 
 //http://www.axllent.org/docs/view/track-outbound-links-with-analytics-js/
