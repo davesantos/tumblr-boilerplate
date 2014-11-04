@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato|Montserrat);
 html {
-  font-size: 150%;
-  line-height: 1.5em;
+  font-size: 137.5%;
+  line-height: 1.63636em;
 }
 
 * {
@@ -31,41 +31,47 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-  font-size: 0.91667em;
+  font-size: 1em;
   line-height: 1.63636em;
   color: #A7914F;
 }
 
-h1 {
-  font-size: 1em;
+#title {
+  text-align: center;
+}
+#title h1 {
+  font-size: 1.09091em;
   line-height: 1.5em;
+  color: #A7914F;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   text-transform: uppercase;
+  display: inline-block;
 }
-h1::after {
+#title h1::after {
   content: "";
   height: 10px;
-  background: #fff;
+  background: #A7914F;
   display: block;
   width: inherit;
 }
 
 h3 {
-  font-size: 0.83333em;
+  font-size: 0.90909em;
   line-height: 1.8em;
 }
 
 .footer {
   background: #d4d4d4;
+  text-align: center;
 }
 
 .headline {
-  font-size: 1.16667em;
+  font-size: 1.27273em;
   line-height: 1.28571em;
   text-align: center;
-  color: #000;
+  color: #eee;
 }
 
 .description {
@@ -74,23 +80,24 @@ h3 {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.63636em;
+  color: #A7914F;
 }
 
 .slide {
   overflow: hidden;
-  padding: 3em 0;
+  padding: 3.27273em 0 1.63636em;
 }
 .slide:first-child {
-  background: #A7914F;
+  background: #0F5F80;
   height: 100%;
 }
 .slide .inner {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .slide .inner:after {
   content: " ";
@@ -98,12 +105,13 @@ h3 {
   clear: both;
 }
 
-nav {
-  overflow: hidden;
+.panel p {
+  color: gray;
 }
 
 ul {
   padding: 0;
+  margin: 0;
 }
 ul li {
   display: inline-block;
@@ -111,7 +119,7 @@ ul li {
 ul li a.button {
   margin-right: 20px;
   background: #84733f;
-  padding: 20px;
+  padding: 16px;
   color: #eee;
   -moz-box-shadow: #62552e 5px 5px 0;
   -webkit-box-shadow: #62552e 5px 5px 0;
@@ -120,15 +128,15 @@ ul li a.button {
 
 .frag {
   background: rgba(255, 255, 255, 0.5);
-  padding: 1.5em;
-  margin-bottom: 1.5em;
+  padding: 1.63636em;
+  margin-bottom: 1.63636em;
 }
 
 @media only screen and (min-width: 768px) {
   .headline {
-    font-size: 1.75em;
+    font-size: 1.90909em;
     line-height: 1.71429em;
-    line-height: 1.5em;
+    line-height: 1.63636em;
     text-align: left;
   }
 
