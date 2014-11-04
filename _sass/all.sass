@@ -2,7 +2,7 @@
 @import "mixins"
 
 //Compass Typography
-$base-font-size: 24px
+$base-font-size: 22px
 $base-line-height: 36px
 $rhythm-unit: em
 +establish-baseline
@@ -10,6 +10,7 @@ $rhythm-unit: em
 $base-font-color: #000
 $base-background-color: #eee
 $color-accent: #A7914F
+$color-stage: #0F5F80
 $color-footer: darken($base-background-color, 10%)
 
 *
@@ -37,18 +38,23 @@ h2
 	+adjust-font-size-to(22px)
 	color: $color-accent
 
-h1
-	+adjust-font-size-to(24px)
-	margin-left: auto
-	margin-right: auto
+#title
 	text-align: center
-	text-transform: uppercase
-	&::after
-		content: ''
-		height: 10px
-		background: #fff
-		display: block
-		width: inherit
+	h1
+		+adjust-font-size-to(24px)
+		color: $color-accent
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		text-transform: uppercase
+		display: inline-block
+		// +trailing-border(2px)
+		&::after
+			content: ''
+			height: 10px
+			background: $color-accent
+			display: block
+			width: inherit
 
 h3
 	+adjust-font-size-to(20px)
@@ -64,38 +70,34 @@ h3
 .headline
 	+adjust-font-size-to(28px)
 	text-align: center
-	color: $base-font-color
+	color: $base-background-color
 
 .description
 	+full
 	margin-bottom: rhythm(1)
+	color: $color-accent
 
 .slide
 	overflow: hidden
-	padding: rhythm(2) 0
+	padding: rhythm(2) 0 rhythm(1)
 	&:first-child
-		background: $color-accent
+		background: $color-stage
 		height: 100%
 	.inner
 		+container
-		padding-left: 10px
-		padding-right: 10px
-
-
+		padding-left: 16px
+		padding-right: 16px
 nav
-	overflow: hidden
-
-
-ul
-	padding: 0
-	li
-		display: inline-block
-		a.button
-			margin-right: 20px
-			background: darken($color-accent, 10%)
-			padding: 20px
-			color: $base-background-color
-			+box-shadow(darken($color-accent, 20%) 5px 5px 0)
+	ul
+		padding: 0
+		li
+			display: inline-block
+			a.button
+				margin-right: 20px
+				background: darken($color-accent, 10%)
+				padding: 16px
+				color: $base-background-color
+				+box-shadow(darken($color-accent, 20%) 5px 5px 0)
 
 .frag
 	background: rgba(255,255,255, 0.5)
