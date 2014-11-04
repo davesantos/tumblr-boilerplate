@@ -1,7 +1,7 @@
 Tumblr Boilerplate - 2.0.0
 ------
 
-This is a fully functional Tumblr theme that works out of the box. Style it however you wish. The goal was to strip redundant tags to keep the development process rapid. Contribute any pull requests you might find helpful for others.
+A fully functional bare bones Tumblr theme that works out of the box. Style it to your needs. The goal of the project was to remove uncessary clutter tags while maintaining a smooth headache-free development process. Contribute any pull requests you might find helpful for others.
 
 ###Installation
 
@@ -21,7 +21,7 @@ __Theme does not support__
 * [Notes](https://www.tumblr.com/docs/en/custom_themes#notes)
 * [Group Blogs](https://www.tumblr.com/docs/en/custom_themes#group-blogs)
 
-(Purposely not included to expedite workflow in the various uses)
+(Purposely not included to remain flexible in the various uses of a theme.)
 
 ###Disclaimer
 
