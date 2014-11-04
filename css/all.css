@@ -1,0 +1,9 @@
+html {
+  font-size: 125%;
+  line-height: 1.8em;
+}
+
+img, video, object, embed {
+  max-width: 100%;
+  height: auto !important;
+}
