@@ -1,9 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Montserrat);
 html {
-  font-size: 125%;
-  line-height: 1.8em;
+  font-size: 150%;
+  line-height: 1.5em;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #A7914F;
+  text-decoration: none;
 }
 
 img, video, object, embed {
   max-width: 100%;
   height: auto !important;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 0.91667em;
+  line-height: 1.63636em;
+  color: #A7914F;
+}
+
+h1 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1::after {
+  content: "";
+  height: 10px;
+  background: #fff;
+  display: block;
+  width: inherit;
+}
+
+h3 {
+  font-size: 0.83333em;
+  line-height: 1.8em;
+}
+
+.footer {
+  background: #d4d4d4;
+}
+
+.headline {
+  font-size: 1.16667em;
+  line-height: 1.28571em;
+  text-align: center;
+  color: #000;
+}
+
+.description {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5em;
+}
+
+.slide {
+  overflow: hidden;
+  padding: 3em 0;
+}
+.slide:first-child {
+  background: #A7914F;
+  height: 100%;
+}
+.slide .inner {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.slide .inner:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+nav {
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+}
+ul li a.button {
+  margin-right: 20px;
+  background: #84733f;
+  padding: 20px;
+  color: #eee;
+  -moz-box-shadow: #62552e 5px 5px 0;
+  -webkit-box-shadow: #62552e 5px 5px 0;
+  box-shadow: #62552e 5px 5px 0;
+}
+
+.frag {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .headline {
+    font-size: 1.75em;
+    line-height: 1.71429em;
+    line-height: 1.5em;
+    text-align: left;
+  }
+
+  .description {
+    width: 48.93617%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+
+  .panel {
+    width: 31.91489%;
+    float: left;
+    margin-right: 2.12766%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .panel:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
 }

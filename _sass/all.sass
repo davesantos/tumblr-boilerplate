@@ -1,18 +1,111 @@
 @import "base"
 @import "mixins"
 
+//Compass Typography
+$base-font-size: 24px
+$base-line-height: 36px
+$rhythm-unit: em
 +establish-baseline
+
+$base-font-color: #000
+$base-background-color: #eee
+$color-accent: #A7914F
+$color-footer: darken($base-background-color, 10%)
+
+*
+	+box-sizing(border-box)
 
 body
 	// +container
+	background: #eee
+	font-family: 'Lato', sans-serif
+	-webkit-font-smoothing: antialiased
 
+a
+	color: $color-accent
+	text-decoration: none
 
 img, video, object, embed
 	max-width: 100%
 	height: auto !important
 
 
+h1,h2,h3,h4
+	font-family: 'Montserrat', sans-serif
+
+h2
+	+adjust-font-size-to(22px)
+	color: $color-accent
+
+h1
+	+adjust-font-size-to(24px)
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	text-transform: uppercase
+	&::after
+		content: ''
+		height: 10px
+		background: #fff
+		display: block
+		width: inherit
+
+h3
+	+adjust-font-size-to(20px)
+
+///////////////////////////////////////////////////////////////////
+// Structure
+///////////////////////////////////////////////////////////////////
+.footer
+	background: $color-footer
+///////////////////////////////////////////////////////////////////
+// Components
+///////////////////////////////////////////////////////////////////
+.headline
+	+adjust-font-size-to(28px)
+	text-align: center
+	color: $base-font-color
+
+.description
+	+full
+	margin-bottom: rhythm(1)
+
+.slide
+	overflow: hidden
+	padding: rhythm(2) 0
+	&:first-child
+		background: $color-accent
+		height: 100%
+	.inner
+		+container
+		padding-left: 10px
+		padding-right: 10px
+
+
+nav
+	overflow: hidden
+
+
+ul
+	padding: 0
+	li
+		display: inline-block
+		a.button
+			margin-right: 20px
+			background: darken($color-accent, 10%)
+			padding: 20px
+			color: $base-background-color
+			+box-shadow(darken($color-accent, 20%) 5px 5px 0)
+
+.frag
+	background: rgba(255,255,255, 0.5)
+	padding: rhythm(1)
+	margin-bottom: rhythm(1)
+
+
+
 // Tablet
 @media only screen and (min-width: 768px)
+	@import "_breakpoints/_768"
 @media only screen and (min-width: 1030px)
 @media only screen and (min-width: 1240px)

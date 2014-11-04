@@ -1,16 +1,14 @@
 @import "compass/css3";
 @import "compass/typography";
 @import "susy";
+@import url(http://fonts.googleapis.com/css?family=Lato|Montserrat);
 
-//Compass Typography
-$base-font-size: 20px;
-$base-line-height: 36px;
-$rhythm-unit: rem;
+
 
 //1322 Grid System for container()
 $total-columns  : 12;             // a 12-column grid
-$column-width   : 90px;            // each column is 4em wide
-$gutter-width   : 22px;            // 1em gutters between columns
+$column-width   : 60px;            // each column is 4em wide
+$gutter-width   : 20px;            // 1em gutters between columns
 
 $susy: (
 	columns: $total-columns,

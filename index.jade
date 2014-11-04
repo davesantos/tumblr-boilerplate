@@ -4,9 +4,66 @@ html(lang="en")
         meta(charset="utf-8")
         meta(http-equiv="X-UA-Compatible",content="IE=edge")
         meta(name="viewport",content="width=device-width,initial-scale=1")
-        title boilerplate
+        title Tumblr Boilerplate
+
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css')
         link(rel='stylesheet', href='css/all.css')
     body
+
+        .slide
+            .inner
+                h1 Tumblr Boilerplate
+                h2.headline A fully functional bare-bones Tumblr theme that works out of the box.
+                p.description Style it to your needs. The goal of the project was to remove uncessary code while maintaining a headache-free development process.
+                nav
+                    ul
+                        li: a(href='#',class='button') Download 2.0
+                        li: a(href='#',class='button') Fork
+
+        .slide: .inner
+                h2 Features
+                .panel
+                    h3 Supports all post-types
+                    p All essential post-types (Image, Video, Text, Link, etc.) are structured
+                .panel
+                    h3 Localization Strings
+                    p Select variables that appear in other Tumblr supported languages.
+                .panel
+                    h3 Normalize CDN
+                    p The widely adopted CSS Normalize minified & hosted on a realiable delivery network.
+                .panel
+                    h3 Semantic HTML5
+                    p It's time to move on
+                .panel
+                    h3 Global Appearance
+                    p The new default theme options which are standard for any Tumblr
+                .panel
+                    h3 Normalize CDN
+                    p The widely adopted CSS Normalize minified & hosted on a realiable delivery network.
+
+        //- .slide: .inner
+        //-     h2 Structure
+        //-     p This diagram gives you basic idea of the structure inside the theme.
+        //-     .frag header
+        //-         .frag h1
+        //-         .frag navigation
+        //-     .frag .content
+        //-         .frag Photo
+        //-         .frag Video
+        //-         .frag
+        //-     .frag footer
+        .slide: .inner
+            h2 Installation
+            p
+        .slide: .inner
+            h2 Working with CSS locally.
+            h4 Using Task Runners to Inject Inline CSS
+            p This is a topic many developers would like to know about when working locally.
+
+            h4 Using Dropbox public folder
+        .slide.footer: .inner
+            p A project maintained by <a href="#">Dave Santos</a> (<a href="#">@davesantos</a>)
+            p Contribute any pull requests you might find helpful for others.
+
         script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
         script(src="js/all.js")

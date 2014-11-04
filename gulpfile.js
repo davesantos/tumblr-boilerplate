@@ -13,26 +13,28 @@ function errorHandler(error) {
 
 // Compass compile and livereload
 gulp.task('compass', function(){
-	return gulp.src('./src/_sass/*.scss')
+	return gulp.src('./_sass/*')
 		.pipe(compass({
 			config_file: 'config.rb',
-			css: './src/css',
-			sass: 'src/_sass', //Must not have .
+			css: './css',
+			sass: '_sass', //Must not have .
 			require: ['susy'] }))
 		.on('error', errorHandler)
-		.pipe(gulp.dest('./src/css'))
+		.pipe(gulp.dest('./css'))
 		.pipe(livereload());
 });
 
 gulp.task('jade', function(){
-	gulp.src('./src/*.jade')
-		.pipe(jade())
-		.pipe(gulp.dest('./src'))
+	gulp.src('./*.jade')
+		.pipe(jade({
+			pretty: true
+		}))
+		.pipe(gulp.dest('.'))
 		.pipe(livereload());
 })
 
 gulp.task('indent', function(){
-	gulp.src('src/*.html')
+	gulp.src('*.html')
 		.pipe(prettify({
 			indent_inner_html: true,
 			indent_with_tabs: true,
@@ -40,15 +42,15 @@ gulp.task('indent', function(){
 			indent_size: 1,
 			preserve_newlines: false
 		}))
-		.pipe(gulp.dest('src'));
+		.pipe(gulp.dest('.'));
 });
 
 
 gulp.task('watch', function(){
 	var server = livereload();
-	gulp.watch('./src/_sass/**/*', ['compass']);
-	gulp.watch('./src/css/*').on('change', livereload.changed);
-	gulp.watch('./src/*.jade', ['jade']);
+	gulp.watch('./_sass/**/*', ['compass']);
+	gulp.watch('./css/*').on('change', livereload.changed);
+	gulp.watch('./*.jade', ['jade']);
 })
 
 gulp.task('default', ['compass', 'watch']);
