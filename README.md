@@ -1,7 +1,7 @@
 Tumblr Boilerplate - 2.0.0
 ------
 
-A fully functional bare-bones Tumblr theme that works out of the box. Style it to your needs. The goal of the project was to remove uncessary clutter tags while maintaining a smooth headache-free development process. Contribute any pull requests you might find helpful for others.
+A fully functional bare-bones Tumblr theme that works out of the box. Style it to your needs. The goal of the project was to remove uncessary code while maintaining a headache-free development process.
 
 ###Installation
 
@@ -36,6 +36,6 @@ Tumblr will auto-inject extra code & scripts into the final output of your page.
 
 ###  License
 
-tumblr-boilerplate is freely distributable under the terms of the [MIT license](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md).
+tumblr-boilerplate is freely distributable under the terms of the [MIT license](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md). Contribute any pull requests you might find helpful for others.
 
 
