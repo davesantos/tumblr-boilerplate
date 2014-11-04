@@ -106,7 +106,7 @@ h3
 	+opacity(0)
 	margin-bottom: rhythm(1)
 	margin-top: 0
-	color: $color-accent
+	color: lighten($color-accent,10%)
 
 .slide
 	overflow: hidden
@@ -126,6 +126,10 @@ h3
 ul
 	padding: 0
 	margin: 0
+	+animation(fadeIn 500ms)
+	+animation-fill-mode(forwards)
+	+animation-delay(1500ms)
+	+opacity(0)
 	li
 		display: inline-block
 		a.button

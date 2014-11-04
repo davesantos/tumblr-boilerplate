@@ -21,11 +21,11 @@ a {
   -o-transition: color 0.3s ease;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-  color: #A7914F;
+  color: #a58429;
   text-decoration: none;
 }
 a:hover {
-  color: #62552e;
+  color: #534315;
 }
 
 img, video, object, embed {
@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
 h2 {
   font-size: 1em;
   line-height: 1.63636em;
-  color: #A7914F;
+  color: #a58429;
 }
 
 #title {
@@ -49,7 +49,7 @@ h2 {
 #title h1 {
   font-size: 1.09091em;
   line-height: 1.5em;
-  color: #A7914F;
+  color: #a58429;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -57,13 +57,70 @@ h2 {
   display: inline-block;
 }
 #title h1::after {
+  -moz-animation: underline 500ms cubic-bezier(0.35, -0.01, 0.18, 1.01);
+  -webkit-animation: underline 500ms cubic-bezier(0.35, -0.01, 0.18, 1.01);
+  animation: underline 500ms cubic-bezier(0.35, -0.01, 0.18, 1.01);
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
   content: "";
   height: 10px;
-  background: #A7914F;
+  background: #a58429;
   display: block;
-  width: inherit;
+  width: 0;
 }
 
+@-moz-keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 h3 {
   font-size: 0.90909em;
   line-height: 1.8em;
@@ -77,6 +134,17 @@ h3 {
 .headline {
   font-size: 1.27273em;
   line-height: 1.28571em;
+  -moz-animation: fadeIn 500ms;
+  -webkit-animation: fadeIn 500ms;
+  animation: fadeIn 500ms;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-delay: 500ms;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   text-align: center;
   color: #eee;
 }
@@ -87,9 +155,20 @@ h3 {
   float: left;
   margin-left: 0;
   margin-right: 0;
+  -moz-animation: fadeIn 500ms;
+  -webkit-animation: fadeIn 500ms;
+  animation: fadeIn 500ms;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
   margin-bottom: 1.63636em;
   margin-top: 0;
-  color: #A7914F;
+  color: #cda434;
 }
 
 .slide {
@@ -120,6 +199,17 @@ h3 {
 ul {
   padding: 0;
   margin: 0;
+  -moz-animation: fadeIn 500ms;
+  -webkit-animation: fadeIn 500ms;
+  animation: fadeIn 500ms;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-delay: 1500ms;
+  -webkit-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
 }
 ul li {
   display: inline-block;
@@ -130,16 +220,16 @@ ul li a.button {
   -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
   display: block;
-  margin-right: 20px;
-  background: #84733f;
-  padding: 16px;
+  margin-right: 10px;
+  background: #7c631f;
+  padding: 3px 10px;
   color: #eee;
-  -moz-box-shadow: #62552e 5px 5px 0;
-  -webkit-box-shadow: #62552e 5px 5px 0;
-  box-shadow: #62552e 5px 5px 0;
+  -moz-box-shadow: #534315 5px 5px 0;
+  -webkit-box-shadow: #534315 5px 5px 0;
+  box-shadow: #534315 5px 5px 0;
 }
 ul li a.button:hover {
-  background: #A7914F;
+  background: #a58429;
 }
 
 .frag {
@@ -149,6 +239,14 @@ ul li a.button:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  ul {
+    margin-top: 1.63636em;
+    width: 48.93617%;
+    float: right;
+    margin-right: 0;
+    text-align: center;
+  }
+
   .headline {
     font-size: 1.90909em;
     line-height: 1.71429em;
