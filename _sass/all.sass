@@ -13,7 +13,7 @@ $default-transition-function : ease
 $base-font-color: #000
 $base-background-color: #eee
 $color-accent: #a58429
-$color-stage: #0F5F80
+$color-stroke: #0F5F80
 $color-footer: darken($base-background-color, 10%)
 
 *
@@ -21,8 +21,12 @@ $color-footer: darken($base-background-color, 10%)
 
 body
 	// +container
-	background: #eee
+	background-color: $base-background-color
+	background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.459px" height="26.459px" viewBox="0 0 26.459 26.459" enable-background="new 0 0 26.459 26.459" xml:space="preserve"><line fill="none" stroke="#0F5F80" stroke-width="2" stroke-miterlimit="10" x1="13.229" y1="0" x2="13.229" y2="26.459"/><line fill="none" stroke="#0F5F80" stroke-width="2" stroke-miterlimit="10" x1="26.459" y1="13.229" x2="0" y2="13.229"/></svg>')
 	font-family: 'Lato', sans-serif
+	background-repeat: repeat
+	background-position: top left
+	background-attachment: fixed
 	-webkit-font-smoothing: antialiased
 
 a
@@ -47,6 +51,9 @@ h2
 #title
 	text-align: center
 	h1
+		background-color: $base-background-color
+		border: 2px solid $color-stroke
+		padding: rhythm(1)
 		+adjust-font-size-to(24px)
 		color: $color-accent
 		margin-left: auto
@@ -96,7 +103,48 @@ h3
 	+animation-delay(500ms)
 	+opacity(0)
 	text-align: center
+
+.outline
+	// -webkit-text-stroke: 1px $color-stroke
 	color: $base-background-color
+
+$depth: 10px
+.boxit
+	background: $base-background-color
+	padding: 10px
+	border: $color-stroke solid 2px
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		top: $depth
+		left: $depth
+		z-index: -1
+		background: $base-background-color
+		border: $color-stroke solid 2px
+		position: absolute
+
+// .special
+// 	background: $base-background-color
+// 	border: $color-stroke solid 2px
+// 	color: $color-stroke
+// 	display: block
+// 	padding: 20px
+// 	position: relative
+// 	&:after
+// 		content: ''
+// 		display: block
+// 		position: absolute
+// 		width: 100%
+// 		height: 100%
+// 		background: $base-background-color
+// 		border: $color-stroke solid 2px
+// 		top: 20px
+// 		left: 20px
+// 		z-index: -1
+
 
 .description
 	+full
@@ -111,9 +159,12 @@ h3
 .slide
 	overflow: hidden
 	padding: rhythm(2) 0 rhythm(1)
+	background-color: $base-background-color
 	&:first-child
-		background: $color-stage
 		height: 100%
+		background-color: transparent
+	&:nth-child(2)
+		border-top: 2px solid $color-stroke
 	.inner
 		+container
 		padding-left: 16px

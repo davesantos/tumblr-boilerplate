@@ -11,8 +11,12 @@ html {
 }
 
 body {
-  background: #eee;
+  background-color: #eee;
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.459px" height="26.459px" viewBox="0 0 26.459 26.459" enable-background="new 0 0 26.459 26.459" xml:space="preserve"><line fill="none" stroke="#0F5F80" stroke-width="2" stroke-miterlimit="10" x1="13.229" y1="0" x2="13.229" y2="26.459"/><line fill="none" stroke="#0F5F80" stroke-width="2" stroke-miterlimit="10" x1="26.459" y1="13.229" x2="0" y2="13.229"/></svg>');
   font-family: "Lato", sans-serif;
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -47,6 +51,9 @@ h2 {
   text-align: center;
 }
 #title h1 {
+  background-color: #eee;
+  border: 2px solid #0F5F80;
+  padding: 1.63636em;
   font-size: 1.09091em;
   line-height: 1.5em;
   color: #a58429;
@@ -146,7 +153,29 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   text-align: center;
+}
+
+.outline {
   color: #eee;
+}
+
+.boxit {
+  background: #eee;
+  padding: 10px;
+  border: #0F5F80 solid 2px;
+  position: relative;
+}
+.boxit:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+  background: #eee;
+  border: #0F5F80 solid 2px;
+  position: absolute;
 }
 
 .description {
@@ -174,10 +203,14 @@ h3 {
 .slide {
   overflow: hidden;
   padding: 3.27273em 0 1.63636em;
+  background-color: #eee;
 }
 .slide:first-child {
-  background: #0F5F80;
   height: 100%;
+  background-color: transparent;
+}
+.slide:nth-child(2) {
+  border-top: 2px solid #0F5F80;
 }
 .slide .inner {
   max-width: 940px;
@@ -251,7 +284,6 @@ ul li a.button:hover {
     font-size: 1.90909em;
     line-height: 1.71429em;
     line-height: 1.63636em;
-    text-align: left;
   }
 
   .description {
@@ -270,5 +302,10 @@ ul li a.button:hover {
   .panel:nth-child(3n) {
     float: right;
     margin-right: 0;
+  }
+
+  .boxit:after {
+    top: 20px;
+    left: 20px;
   }
 }

@@ -6,7 +6,6 @@ ul
 .headline
 	+adjust-font-size-to(42px)
 	+adjust-leading-to(1)
-	text-align: left
 
 .description
 	+span(6 of 12)
@@ -17,3 +16,9 @@ ul
 	box-sizing: border-box
 	&:nth-child(3n)
 		+last
+
+
+.boxit
+	&:after
+		top: $depth*2
+		left: $depth*2
