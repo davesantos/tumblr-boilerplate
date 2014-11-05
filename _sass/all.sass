@@ -97,13 +97,6 @@ h3
 ///////////////////////////////////////////////////////////////////
 // Components
 ///////////////////////////////////////////////////////////////////
-.headline
-	+adjust-font-size-to(28px)
-	+animation(fadeIn 500ms)
-	+animation-fill-mode(forwards)
-	+animation-delay(500ms)
-	+opacity(0)
-	text-align: center
 
 .outline
 	// -webkit-text-stroke: 1px $color-stroke
@@ -112,12 +105,13 @@ h3
 $depth: 10px
 .boxit
 	background: $base-background-color
-	padding: 10px
 	border: $color-stroke solid 2px
 	position: relative
+	display: table
+	clear: both
+	margin-bottom: rhythm(2)
 	&:after
 		content: ''
-		display: block
 		width: 100%
 		height: 100%
 		top: $depth
@@ -127,38 +121,37 @@ $depth: 10px
 		border: $color-stroke solid 2px
 		position: absolute
 
-// .special
-// 	background: $base-background-color
-// 	border: $color-stroke solid 2px
-// 	color: $color-stroke
-// 	display: block
-// 	padding: 20px
-// 	position: relative
-// 	&:after
-// 		content: ''
-// 		display: block
-// 		position: absolute
-// 		width: 100%
-// 		height: 100%
-// 		background: $base-background-color
-// 		border: $color-stroke solid 2px
-// 		top: 20px
-// 		left: 20px
-// 		z-index: -1
+// .clearfix:before, .clearfix:after
+// 	content: ""
+// 	display: table
 
+// .clearfix:after
+// 	clear: both
+
+// .clearfix
+// 	zoom: 1
+
+.headline
+	+adjust-font-size-to(28px)
+	+animation(fadeIn 500ms)
+	+animation-fill-mode(forwards)
+	+animation-delay(500ms)
+	+opacity(0)
+	text-align: center
 
 .description
-	+full
 	+animation(fadeIn 500ms)
 	+animation-fill-mode(forwards)
 	+animation-delay(1s)
 	+opacity(0)
-	margin-bottom: rhythm(1)
-	margin-top: 0
+	padding: rhythm(1) gutter()
+	background: $base-background-color
 	color: lighten($color-accent,10%)
+	position: relative
+	margin-top: 0
+	margin-bottom: 0
 
 .slide
-	overflow: hidden
 	padding: rhythm(2) 0 rhythm(1)
 	background-color: $base-background-color
 	&:first-child
@@ -166,6 +159,7 @@ $depth: 10px
 		background-color: transparent
 	&:nth-child(2)
 		border-top: 2px solid $color-stroke
+		padding-top: 0
 	.inner
 		+container
 		padding-left: 16px
