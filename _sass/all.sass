@@ -120,6 +120,8 @@ $depth: 10px
 		background: $base-background-color
 		border: $color-stroke solid 2px
 		position: absolute
+	&:last-child
+		margin: 0
 
 // .clearfix:before, .clearfix:after
 // 	content: ""
@@ -146,13 +148,35 @@ $depth: 10px
 	+opacity(0)
 	padding: rhythm(1) gutter()
 	background: $base-background-color
-	color: lighten($color-accent,10%)
+	color: $color-accent
 	position: relative
-	margin-top: 0
-	margin-bottom: 0
+	margin: 0
+
+ul.buttons
+	+animation(fadeIn 500ms)
+	+animation-delay(1500ms)
+	+animation-fill-mode(forwards)
+	+opacity(0)
+	display: table
+	margin: 0
+	padding: rhythm(1) 0
+	text-align: center
+	li
+		display: inline-block
+		a.button
+			// +box-shadow($color-accent 5px 5px 0)
+			+single-transition(border)
+			border: 2px solid $color-accent
+			color: $color-accent
+			display: block
+			margin-right: 10px
+			padding: 6px 10px
+			&:hover
+				border: 2px solid $color-stroke
+
 
 .slide
-	padding: rhythm(2) 0 rhythm(1)
+	padding: rhythm(2) 0
 	background-color: $base-background-color
 	&:first-child
 		height: 100%
@@ -169,25 +193,7 @@ $depth: 10px
 	p
 		color: lighten($base-font-color, 50%)
 
-ul
-	padding: 0
-	margin: 0
-	+animation(fadeIn 500ms)
-	+animation-fill-mode(forwards)
-	+animation-delay(1500ms)
-	+opacity(0)
-	li
-		display: inline-block
-		a.button
-			+single-transition(background)
-			display: block
-			margin-right: 10px
-			background: darken($color-accent, 10%)
-			padding: 3px 10px
-			color: $base-background-color
-			+box-shadow(darken($color-accent, 20%) 5px 5px 0)
-			&:hover
-				background: $color-accent
+
 
 .frag
 	background: rgba(255,255,255, 0.5)
