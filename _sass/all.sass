@@ -17,13 +17,17 @@ $color-stroke: $base-font-color
 $color-accent: #a58429
 $color-soft: darken($base-background-color, 35%)
 
+$animation-title:	1s
+$animation-head:	1.5s
+$animation-desc:	2s
+$animation-btn:		2.5s
 
 *
 	+box-sizing(border-box)
 
 body
 	// +container
-	+animation(barberpole 2s linear infinite)
+	+animation(flyby 2s linear infinite)
 	background-color: $base-background-color
 	background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.459px" height="26.459px" viewBox="0 0 26.459 26.459" enable-background="new 0 0 26.459 26.459" xml:space="preserve"><line fill="none" stroke="#0F5F80" stroke-width="2" stroke-miterlimit="10" x1="13.229" y1="0" x2="13.229" y2="26.459"/><line fill="none" stroke="#0F5F80" stroke-width="2" stroke-miterlimit="10" x1="26.459" y1="13.229" x2="0" y2="13.229"/></svg>')
 	font-family: 'Lato', sans-serif
@@ -32,7 +36,7 @@ body
 	background-attachment: fixed
 	-webkit-font-smoothing: antialiased
 
-@include keyframes(barberpole)
+@include keyframes(flyby)
 	from
 		background-position: 0 0
 	to
@@ -61,7 +65,7 @@ h3
 	&::after
 		+animation(underline 500ms cubic-bezier(.35,-0.01,.18,1.01))
 		+animation-fill-mode(forwards)
-		+animation-delay(2s)
+		+animation-delay($animation-title)
 		content: ''
 		height: 10px
 		background: $color-accent
@@ -120,6 +124,8 @@ $depth: 10px
 		// margin: 0
 
 
+
+
 #title
 	+adjust-font-size-to(24px)
 	margin: 0 0 rhythm(1)
@@ -131,7 +137,7 @@ $depth: 10px
 	&::after
 		+animation(underline 500ms cubic-bezier(.35,-0.01,.18,1.01))
 		+animation-fill-mode(forwards)
-		+animation-delay(2s)
+		+animation-delay($animation-title)
 		content: ''
 		height: 10px
 		background: $color-accent
@@ -142,7 +148,7 @@ $depth: 10px
 	+adjust-font-size-to(28px)
 	+animation(fadeIn 500ms)
 	+animation-fill-mode(forwards)
-	+animation-delay(500ms)
+	+animation-delay($animation-head)
 	+opacity(0)
 	margin: 0
 	padding: 0
@@ -150,7 +156,7 @@ $depth: 10px
 .description
 	+animation(fadeIn 500ms)
 	+animation-fill-mode(forwards)
-	+animation-delay(1s)
+	+animation-delay($animation-desc)
 	+opacity(0)
 	background: $base-background-color
 	color: $color-accent
@@ -160,7 +166,7 @@ $depth: 10px
 
 ul.buttons
 	+animation(fadeIn 500ms)
-	+animation-delay(1500ms)
+	+animation-delay($animation-btn)
 	+animation-fill-mode(forwards)
 	+opacity(0)
 	margin-bottom: rhythm(1)
@@ -204,8 +210,6 @@ ul.buttons
 	background: rgba(255,255,255, 0.5)
 	padding: rhythm(1)
 	margin-bottom: rhythm(1)
-
-
 
 // Tablet
 @media only screen and (min-width: 768px)
