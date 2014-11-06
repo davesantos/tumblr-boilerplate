@@ -9,8 +9,8 @@ html(lang="en")
         title Tumblr Boilerplate - An HTML5 boilerplate Tumblr theme for rapid development
 
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css')
+        link(rel='stylesheet',href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
         link(rel='stylesheet', href='css/all.css')
-
         meta(property='og:title',content='Tumblr Boilerplate')
         meta(property='og:site_name',content='Tumblr Boilerplate')
         meta(property='og:url',content='http://davesantos.github.io/tumblr-boilerplate/')
@@ -23,29 +23,27 @@ html(lang="en")
 
         .slide
             .inner
-
-                #title
-                    h1 Tumblr Boilerplate
                 .boxit
+                    h1#title Tumblr Boilerplate
                     h2.headline A fully functional bare-bones Tumblr theme that works out of the box.
 
                 .boxit
                     p.description Style it to your needs. The goal of the project was to remove uncessary code easing the development process.
                     ul.buttons
-                        li: a(href='https://github.com/davesantos/tumblr-boilerplate/archive/master.zip',class='button') Download 2.0
-                        li: a(href='https://github.com/davesantos/tumblr-boilerplate',class='button') Source
+                        li: a(href='https://github.com/davesantos/tumblr-boilerplate/archive/master.zip',class='button') Download
+                        li: a.github(href='https://github.com/davesantos/tumblr-boilerplate',class='button') Github
         .slide: .inner
 
-
-                h2 Features
+                header
+                    h3 Features
                 .panel
-                    h3 Supports all post-types
+                    h4 Supports all post-types
                     p All essential post-types (Image, Video, Text, Link, etc.) are semantically structured
                 .panel
-                    h3 Localization Strings
+                    h4 Localization Strings
                     p Select variables appear in other Tumblr supported languages to communicate across countries.
                 .panel
-                    h3 Normalize CDN
+                    h4 Normalize CDN
                     p The widely adopted CSS Normalize minified & hosted on a realiable delivery network.
         //- .slide: .inner
         //-     h2 Structure
