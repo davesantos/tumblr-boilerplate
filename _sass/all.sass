@@ -10,17 +10,20 @@ $rhythm-unit: em
 $default-transition-duration : 0.3s
 $default-transition-function : ease
 
-$base-font-color: #000
 $base-background-color: #eee
+$base-font-color: #0F5F80
+
+$color-stroke: $base-font-color
 $color-accent: #a58429
-$color-stroke: #0F5F80
-$color-footer: darken($base-background-color, 10%)
+$color-soft: darken($base-background-color, 35%)
+
 
 *
 	+box-sizing(border-box)
 
 body
 	// +container
+	+animation(barberpole 2s linear infinite)
 	background-color: $base-background-color
 	background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.459px" height="26.459px" viewBox="0 0 26.459 26.459" enable-background="new 0 0 26.459 26.459" xml:space="preserve"><line fill="none" stroke="#0F5F80" stroke-width="2" stroke-miterlimit="10" x1="13.229" y1="0" x2="13.229" y2="26.459"/><line fill="none" stroke="#0F5F80" stroke-width="2" stroke-miterlimit="10" x1="26.459" y1="13.229" x2="0" y2="13.229"/></svg>')
 	font-family: 'Lato', sans-serif
@@ -28,6 +31,13 @@ body
 	background-position: top left
 	background-attachment: fixed
 	-webkit-font-smoothing: antialiased
+
+@include keyframes(barberpole)
+	from
+		background-position: 0 0
+	to
+		background-position: 26px 26px
+
 
 a
 	+single-transition(color)
@@ -43,34 +53,20 @@ img, video, object, embed
 
 h1,h2,h3,h4
 	font-family: 'Montserrat', sans-serif
-
-h2
-	+adjust-font-size-to(22px)
 	color: $color-accent
 
-#title
-	text-align: center
-	h1
-		background-color: $base-background-color
-		border: 2px solid $color-stroke
-		padding: rhythm(1)
-		+adjust-font-size-to(24px)
-		color: $color-accent
-		margin-left: auto
-		margin-right: auto
-		text-align: center
-		text-transform: uppercase
-		display: inline-block
-		// +trailing-border(2px)
-		&::after
-			+animation(underline 500ms cubic-bezier(.35,-0.01,.18,1.01))
-			+animation-fill-mode(forwards)
-			+animation-delay(2s)
-			content: ''
-			height: 10px
-			background: $color-accent
-			display: block
-			width: 0
+h3
+	+adjust-font-size-to(22px)
+	display: inline-block
+	&::after
+		+animation(underline 500ms cubic-bezier(.35,-0.01,.18,1.01))
+		+animation-fill-mode(forwards)
+		+animation-delay(2s)
+		content: ''
+		height: 10px
+		background: $color-accent
+		display: block
+		width: 0
 
 +keyframes(underline)
 	from
@@ -84,32 +80,32 @@ h2
 	to
 		+opacity(1)
 
-h3
+h4
 	+adjust-font-size-to(20px)
 	color: $color-stroke
 
+header
+	+full
 ///////////////////////////////////////////////////////////////////
 // Structure
 ///////////////////////////////////////////////////////////////////
 .footer
-	background: $color-footer
 	text-align: center
+	color: $color-soft
 ///////////////////////////////////////////////////////////////////
 // Components
 ///////////////////////////////////////////////////////////////////
-
-.outline
-	// -webkit-text-stroke: 1px $color-stroke
-	color: $base-background-color
 
 $depth: 10px
 .boxit
 	background: $base-background-color
 	border: $color-stroke solid 2px
-	position: relative
-	display: table
 	clear: both
+	display: table
 	margin-bottom: rhythm(2)
+	padding: rhythm(1) gutter()
+	position: relative
+	text-align: center
 	&:after
 		content: ''
 		width: 100%
@@ -121,17 +117,26 @@ $depth: 10px
 		border: $color-stroke solid 2px
 		position: absolute
 	&:last-child
-		margin: 0
+		// margin: 0
 
-// .clearfix:before, .clearfix:after
-// 	content: ""
-// 	display: table
 
-// .clearfix:after
-// 	clear: both
-
-// .clearfix
-// 	zoom: 1
+#title
+	+adjust-font-size-to(24px)
+	margin: 0 0 rhythm(1)
+	padding-bottom: 0
+	color: $color-accent
+	text-align: center
+	text-transform: uppercase
+	display: inline-block
+	&::after
+		+animation(underline 500ms cubic-bezier(.35,-0.01,.18,1.01))
+		+animation-fill-mode(forwards)
+		+animation-delay(2s)
+		content: ''
+		height: 10px
+		background: $color-accent
+		display: block
+		width: 0
 
 .headline
 	+adjust-font-size-to(28px)
@@ -139,51 +144,51 @@ $depth: 10px
 	+animation-fill-mode(forwards)
 	+animation-delay(500ms)
 	+opacity(0)
-	text-align: center
+	margin: 0
+	padding: 0
 
 .description
 	+animation(fadeIn 500ms)
 	+animation-fill-mode(forwards)
 	+animation-delay(1s)
 	+opacity(0)
-	padding: rhythm(1) gutter()
 	background: $base-background-color
 	color: $color-accent
-	position: relative
 	margin: 0
+	position: relative
+
 
 ul.buttons
 	+animation(fadeIn 500ms)
 	+animation-delay(1500ms)
 	+animation-fill-mode(forwards)
 	+opacity(0)
-	display: table
-	margin: 0
-	padding: rhythm(1) 0
+	margin-bottom: rhythm(1)
+	padding: 0
 	text-align: center
 	li
 		display: inline-block
 		a.button
 			// +box-shadow($color-accent 5px 5px 0)
-			+single-transition(border)
+			+single-transition(all)
 			border: 2px solid $color-accent
 			color: $color-accent
 			display: block
 			margin-right: 10px
 			padding: 6px 10px
 			&:hover
+				color: $color-stroke
 				border: 2px solid $color-stroke
 
 
 .slide
-	padding: rhythm(2) 0
+	padding: rhythm(1) 0
 	background-color: $base-background-color
 	&:first-child
 		height: 100%
 		background-color: transparent
 	&:nth-child(2)
 		border-top: 2px solid $color-stroke
-		padding-top: 0
 	.inner
 		+container
 		padding-left: 16px
@@ -191,7 +196,7 @@ ul.buttons
 
 .panel
 	p
-		color: lighten($base-font-color, 50%)
+		color: $color-soft
 
 
 

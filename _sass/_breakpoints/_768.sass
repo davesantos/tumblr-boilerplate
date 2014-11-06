@@ -7,12 +7,17 @@ ul
 	+adjust-font-size-to(42px)
 	+adjust-leading-to(1)
 
+
+.boxit
+	&:after
+		top: $depth*2
+		left: $depth*2
+
 .description
 	+span(6)
 
 ul.buttons
 	+span(6 last)
-
 
 .panel
 	+span(4 of 12)
@@ -20,9 +25,3 @@ ul.buttons
 	box-sizing: border-box
 	&:nth-child(3n)
 		+last
-
-
-.boxit
-	&:after
-		top: $depth*2
-		left: $depth*2
