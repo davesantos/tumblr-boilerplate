@@ -6,6 +6,7 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 ###Installation
 
 * [Bower](http://bower.io/): `bower install tumblr-boilerplate`
+* [Github] (https://github.com): `git clone https://github.com/davesantos/tumblr-boilerplate.git`
 * [Download](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip).
 
 ### Features
@@ -16,12 +17,13 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 * Theme options from [global appeareance](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
 * [Localization] (http://www.tumblr.com/docs/en/custom_themes#localization) strings
 
-__Theme does not support__
+__Theme does not include__
 
 * [Notes](https://www.tumblr.com/docs/en/custom_themes#notes)
 * [Group Blogs](https://www.tumblr.com/docs/en/custom_themes#group-blogs)
+* Comment System
 
-(Purposely not included to remain flexible in the various uses of a theme.)
+(Intentionally not included to remain flexible in the various uses of a theme.)
 
 ###Disclaimer
 
