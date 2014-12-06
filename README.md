@@ -27,7 +27,7 @@ __Theme does not include__
 
 ###Disclaimer
 
-Tumblr will auto-inject extra code & scripts into the final output of your page. This is out of the developers' control. Running it through a HTML Validator or Page Speed will spit out warnings & errors.
+Tumblr will auto-inject extra code & scripts into the final output of your page. This is out of the developers' control. Running it through a HTML Validator or Page Speed may spit out warnings & errors.
 
 ### Resources
 
