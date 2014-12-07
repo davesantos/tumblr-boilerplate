@@ -1,4 +1,4 @@
-Tumblr Boilerplate - 2.0.0
+Tumblr Boilerplate - 2.0.1
 ------
 
 A fully functional bare-bones Tumblr theme that works out of the box. Style it to your needs. The goal of the project was to remove uncessary code easing the development process.
@@ -32,7 +32,7 @@ Tumblr will auto-inject extra code & scripts into the final output of your page.
 ### Resources
 
 * [Tumblr Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
-* [Tumblr file hosting](http://www.tumblr.com/themes/upload_static_file)
+* [Tumblr assets hosting](http://www.tumblr.com/themes/upload_static_file)
 * [Latest Tumblr features](http://staff.tumblr.com/tagged/features)
 * [HTML 5 Boilerplate] (http://html5boilerplate.com/)
 
