@@ -25,7 +25,7 @@ __Theme does not include__
 
 (Intentionally not included to remain flexible in the various uses of a theme.)
 
-###Disclaimer
+###Caveats
 
 Tumblr will auto-inject extra code & scripts into the final output of your page. This is out of the developers' control. Running it through a HTML Validator or Page Speed may spit out warnings & errors.
 
