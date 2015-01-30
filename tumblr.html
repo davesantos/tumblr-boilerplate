@@ -12,11 +12,11 @@
   <link rel="alternate" type="application/rss+xml" href="{RSS}">
   {block:Hidden}
     <!-- Custom theme options in the 'Hidden' block will not show when viewing the source code.
-    https://www.tumblr.com/docs/en/custom_themes#theme-options
-    <meta name="text:Twitter Username" content=""/>
+      https://www.tumblr.com/docs/en/custom_themes#theme-options
+     <meta name="text:Twitter Username" content=""/>
      -->
   {/block:Hidden}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" type="text/css" media="all">
   <style type="text/css">
     /*Tumblr Global Appearance */
     body {background:{BackgroundColor};}
@@ -52,6 +52,7 @@
       {block:NoSearchResults}<p>{lang:No results for SearchQuery 2}</p>{/block:NoSearchResults}
     </div>
     {/block:SearchPage}
+
     {block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage}
 
     {block:Posts}
@@ -137,7 +138,7 @@
       {/block:Chat}
 
       {block:Answer}
-      <main class="question">
+      <section class="question">
         <img src="{AskerPortraitURL-48}">
         <div class="asker">{Asker} asked:</div>
         <div class="asker-question">
