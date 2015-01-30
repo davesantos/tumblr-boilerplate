@@ -30,10 +30,9 @@ __Theme does not include__
 Tumblr will auto-inject extra code & scripts into the final output of your page. This is out of the developers' control. Running it through a HTML Validator or Page Speed may spit out warnings & errors.
 
 ### Resources
-
+* [Latest Tumblr features](http://developers.tumblr.com/)
 * [Tumblr Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
 * [Tumblr assets hosting](http://www.tumblr.com/themes/upload_static_file)
-* [Latest Tumblr features](http://staff.tumblr.com/tagged/features)
 * [HTML 5 Boilerplate] (http://html5boilerplate.com/)
 
 ###  License
