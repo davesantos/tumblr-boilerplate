@@ -156,10 +156,13 @@
       {/block:Answerer}
       <div class="replies">{Replies}</div>
       {/block:Answer}
+
       {block:IndexPage}
-      {LikeButton color="black"}
-      {ReblogButton color="black"}
-      <p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>{/block:IndexPage}
+      {LikeButton color="grey"}
+      {ReblogButton color="grey"}
+      <p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
+      {/block:IndexPage}
+
     </article>
     {/block:Posts}
 
@@ -183,7 +186,7 @@
     </div>
     {/block:Pagination}
   </main>
-  <footer role="" class="footer">
+  <footer class="footer">
     <small>{block:ShowTitle}{Title} {/block:ShowTitle}&copy; {CopyrightYears}</small>
   </footer>
 </body>
