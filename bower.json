@@ -5,7 +5,7 @@
   "authors": [
     "Dave Santos <info@davesantos.com>"
   ],
-  "description": "An HTML5 boilerplate Tumblr theme for rapid development.",
+  "description": "A true bare bones Tumblr theme for a quick jump-start.",
   "main": "tumblr.html",
   "keywords": [
     "tumblr",
