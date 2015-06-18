@@ -12,10 +12,10 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 ###Getting Started
 
 * Choose an [Installation](#install) method.
-* Modify *tumblr.html* with favorite code editor.
-* To preview it, go to tumblr.com/customize/`your_blog_name`.
+* Modify tumblr.html with your favorite code editor.
+* Preview it by going to `tumblr.com/customize/your_blog_name`.
 * Click *Edit HTML* on the left column.
-* Copy & paste your customized code and click *Save*.
+* Copy & paste your customized code then click *Save*.
 
 ### Features
 
