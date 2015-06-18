@@ -13,7 +13,7 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 
 * Choose an [Installation](#install) method.
 * Modify tumblr.html with your favorite code editor.
-* Preview it by going to `tumblr.com/customize/your_blog_name`.
+* Preview it by going to `http://tumblr.com/customize/your_blog_name`.
 * Click *Edit HTML* on the left column.
 * Copy & paste your customized code then click *Save*.
 
