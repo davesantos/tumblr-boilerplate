@@ -32,10 +32,12 @@
 <body>
 
   <header role="banner" class="header">
+
     {block:ShowTitle}<h1 id="logo"><a href="/">{Title}</a></h1>{/block:ShowTitle}
     {block:ShowDescription}{block:Description}<div class="description">{Description}</div>{/block:Description}{/block:ShowDescription}
     {block:ShowHeaderImage}<img src="{HeaderImage}">{/block:ShowHeaderImage}
     {block:ShowAvatar}<img src="{PortraitURL-128}">{/block:ShowAvatar}
+
     <nav role="navigation">
       <ul>
         {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
@@ -43,10 +45,12 @@
         {block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
       </ul>
     </nav>
+
     <form id="search" action="/search" method="get">
       <input role="textbox" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
       <input role="button" type="submit" value="{lang:Search}">
     </form>
+
   </header>
 
   <main role="main" class="content">
@@ -168,10 +172,12 @@
         <p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
       {/block:IndexPage}
 
+      {block:PermalinkPage}
+      {/block:PermalinkPage}
+
     </article>
     {/block:Posts}
 
-    <!-- Pagination -->
     {block:PermalinkPagination}
     <div class="pagination">
       {block:PreviousPost}<a class="prev"href="{PreviousPost}">{lang:Previous post}</a>{/block:PreviousPost}
