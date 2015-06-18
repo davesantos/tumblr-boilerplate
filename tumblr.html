@@ -11,9 +11,13 @@
   <link rel="canonical" href="{block:IndexPage}{BlogURL}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}">
   <link rel="alternate" type="application/rss+xml" href="{RSS}">
   {block:Hidden}
-    <!-- Custom theme options in the 'Hidden' block will not show when viewing the source code.
+    <!--
+
+      Custom theme options in the 'Hidden' block will not show when viewing the source code.
       https://www.tumblr.com/docs/en/custom_themes#theme-options
+
      <meta name="text:Twitter Username" content=""/>
+
      -->
   {/block:Hidden}
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" type="text/css" media="all">
@@ -28,10 +32,12 @@
 <body>
 
   <header role="banner" class="header">
+
     {block:ShowTitle}<h1 id="logo"><a href="/">{Title}</a></h1>{/block:ShowTitle}
     {block:ShowDescription}{block:Description}<div class="description">{Description}</div>{/block:Description}{/block:ShowDescription}
     {block:ShowHeaderImage}<img src="{HeaderImage}">{/block:ShowHeaderImage}
     {block:ShowAvatar}<img src="{PortraitURL-128}">{/block:ShowAvatar}
+
     <nav role="navigation">
       <ul>
         {block:HasPages}{block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}{/block:HasPages}
@@ -39,13 +45,17 @@
         {block:AskEnabled}<li><a href="/ask">{AskLabel}</a></li>{/block:AskEnabled}
       </ul>
     </nav>
+
     <form id="search" action="/search" method="get">
       <input role="textbox" type="search" placeholder="{lang:Search}" name="q" value="{SearchQuery}">
       <input role="button" type="submit" value="{lang:Search}">
     </form>
+
   </header>
 
   <main role="main" class="content">
+
+    <!-- Rendered on search pages. -->
     {block:SearchPage}
     <div class="result">
       <p>{lang:Found SearchResultCount results for SearchQuery 2}</p>
@@ -53,119 +63,127 @@
     </div>
     {/block:SearchPage}
 
+    <!-- Rendered on tag pages. -->
     {block:TagPage}<div class="result"><p>{lang:TagResultCount posts tagged Tag 3}</p></div>{/block:TagPage}
+
 
     {block:Posts}
     <article class="post {PostType} {TagsAsClasses}">
       {block:Date}
-      {block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
-      {block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
+        {block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
+        {block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
       {/block:Date}
 
       {block:Text}
-          {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
-          {block:Body}
-          <div class="body-text">
-              {Body}
-          </div>
-          {/block:Body}
+        {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+        {block:Body}
+        <div class="body-text">
+          {Body}
+        </div>
+        {/block:Body}
       {/block:Text}
 
       {block:Quote}
-      <blockquote class="words {Length}">&#8220;{Quote}&#8221;</blockquote>
-      {block:Source}<p class="source">&mdash; {Source}</p>{/block:Source}
+        <blockquote class="words {Length}">&#8220;{Quote}&#8221;</blockquote>
+        {block:Source}<p class="source">&mdash; {Source}</p>{/block:Source}
       {/block:Quote}
 
       {block:Link}
-      <h2><a href="{URL}" {Target}>{Name}</a></h2>
-      {block:Description}<div class="caption">{Description}</div>{/block:Description}
+        <h2><a href="{URL}" {Target}>{Name}</a></h2>
+        {block:Description}<div class="caption">{Description}</div>{/block:Description}
       {/block:Link}
 
       {block:Audio}
-      {block:AlbumArt}<img src="{AlbumArtURL}" alt="">{/block:AlbumArt}
-      <div class="audio-player">
-        {block:AudioEmbed}
+        {block:AlbumArt}<img src="{AlbumArtURL}" alt="">{/block:AlbumArt}
+        <div class="audio-player">
+          {block:AudioEmbed}
             {AudioEmbed color="white"}
-        {/block:AudioEmbed}
-        {block:AudioPlayer}{AudioPlayerBlack}{/block:AudioPlayer}
-      </div>
-      {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+          {/block:AudioEmbed}
+          {block:AudioPlayer}{AudioPlayerBlack}{/block:AudioPlayer}
+        </div>
+        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
       {/block:Audio}
 
       {block:Photo}
-      <figure class="{block:HighRes}high-res{/block:HighRes}{block:Caption} with-caption{/block:Caption}" data-photo-width="{PhotoWidth-HighRes}">
-        {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}">{LinkCloseTag}
+        <figure class="{block:HighRes}high-res{/block:HighRes}{block:Caption} with-caption{/block:Caption}" data-photo-width="{PhotoWidth-HighRes}">
+          {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}">{LinkCloseTag}
           {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
-      </figure>
+        </figure>
       {/block:Photo}
 
       {block:Photoset}
-      <figure{block:Caption} class="with-caption"{/block:Caption}>
-        {block:Photos}
-        <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
-        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+        <figure{block:Caption} class="with-caption"{/block:Caption}>
+          {block:Photos}
+          <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+          {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
           {/block:Photos}
           {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
-      </figure>
+        </figure>
       {/block:Photoset}
 
       {block:Panorama}
-      <figure{block:Caption} class="with-caption"{/block:Caption}>
-        {LinkOpenTag}<img src="{PhotoURL-Panorama}" width="{PhotoWidth-Panorama}" height="{PhotoHeight-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
-        {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
-      </figure>
+        <figure{block:Caption} class="with-caption"{/block:Caption}>
+          {LinkOpenTag}<img src="{PhotoURL-Panorama}" width="{PhotoWidth-Panorama}" height="{PhotoHeight-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
+          {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
+        </figure>
       {/block:Panorama}
 
       {block:Video}
-      <figure{block:Caption} class="with-caption"{/block:Caption}>
+        <figure{block:Caption} class="with-caption"{/block:Caption}>
           <div class="video-player">
               {Video-700}
           </div>
           {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
-      </figure>
+        </figure>
       {/block:Video}
 
       {block:Chat}
-      {block:Title}<h2>{Title}</h2>{/block:Title}
-      <ul class="conversation">
-        {block:Lines}
-        <li class="line {Alt}">
-          {block:Label}<span class="person">{Label}</span>{/block:Label}
-          <span class="person-said">{Line}</span>
-        </li>
-        {/block:Lines}
-      </ul>
+        {block:Title}<h2>{Title}</h2>{/block:Title}
+        <ul class="conversation">
+          {block:Lines}
+          <li class="line {Alt}">
+            {block:Label}<span class="person">{Label}</span>{/block:Label}
+            <span class="person-said">{Line}</span>
+          </li>
+          {/block:Lines}
+        </ul>
       {/block:Chat}
 
       {block:Answer}
-      <section class="question">
-        <img src="{AskerPortraitURL-48}">
-        <div class="asker">{Asker} asked:</div>
-        <div class="asker-question">
-          {Question}
-        </div>
-      </section>
-      {block:Answerer}
+        <section class="question">
+          <img src="{AskerPortraitURL-48}">
+          <div class="asker">{Asker} asked:</div>
+          <div class="asker-question">
+            {Question}
+          </div>
+        </section>
+        {block:Answerer}
           <section class="answerer">
             <img src="{AnswererPortraitURL-48}">
-        <p>{Answerer} answered:</p>
+            <p>{Answerer} answered:</p>
             <div class="answerer-answer">
               {Answer}
-        </div>
+            </div>
           </section>
-      {/block:Answerer}
-      <div class="replies">{Replies}</div>
+        {/block:Answerer}
+        <div class="replies">{Replies}</div>
       {/block:Answer}
 
+      <!-- Rendered on index (post) pages. -->
       {block:IndexPage}
-      {LikeButton color="grey"}
-      {ReblogButton color="grey"}
-      <p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
+        {LikeButton color="grey"}
+        {ReblogButton color="grey"}
+        <p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
       {/block:IndexPage}
+
+      <!-- Rendered on post permalink pages. -->
+      {block:PermalinkPage}
+      {/block:PermalinkPage}
 
     </article>
     {/block:Posts}
 
+    <!-- Pagination -->
     {block:PermalinkPagination}
     <div class="pagination">
       {block:PreviousPost}<a class="prev"href="{PreviousPost}">{lang:Previous post}</a>{/block:PreviousPost}
