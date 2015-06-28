@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-newer": "^0.5.1",
+    "gulp-prettify": "^0.3.0"
+  }
+}
