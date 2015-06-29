@@ -1,5 +1,7 @@
 *.DS_Store
 *.json
+!package.json
 *.sass-cache
 bower_components
 node_modules
+npm-debug.log
