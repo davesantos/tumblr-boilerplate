@@ -19,7 +19,7 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 
 ### Features
 
-* HTML5
+* HTML5 tags
 * [Normalize CSS](http://necolas.github.com/normalize.css/) from a CDN
 * Supports all [post](https://www.tumblr.com/docs/en/custom_themes#posts) types
 * Theme options from [global appeareance](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
@@ -29,7 +29,7 @@ __Theme does not include__
 
 * [Notes](https://www.tumblr.com/docs/en/custom_themes#notes)
 * [Group Blogs](https://www.tumblr.com/docs/en/custom_themes#group-blogs)
-* Comment System
+* Comment System ([Disqus](https://disqus.com/))
 
 (Intentionally not included to remain flexible in the various uses for a theme.)
 
@@ -48,6 +48,6 @@ Tumblr will auto-inject extra code & scripts into the final output of your page.
 
 ###License
 
-tumblr-boilerplate is freely distributable under the terms of the [MIT license](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md). Contribute any pull requests you might find helpful for others.
+[MIT](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md)
 
 
