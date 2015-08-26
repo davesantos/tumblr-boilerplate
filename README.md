@@ -48,6 +48,6 @@ Tumblr will auto-inject extra code & scripts into the final output of your page.
 
 ###License
 
-tumblr-boilerplate is freely distributable under the terms of the [MIT license](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md). Contribute any pull requests you might find helpful for others.
+[MIT](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md).
 
 
