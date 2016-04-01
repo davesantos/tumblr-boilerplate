@@ -25,15 +25,14 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 * Theme options from [global appeareance](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
 * [Localization] (http://www.tumblr.com/docs/en/custom_themes#localization) strings
 
-__Theme does not include__
+__Theme does not support__
 
-* [Notes](https://www.tumblr.com/docs/en/custom_themes#notes)
-* [Group Blogs](https://www.tumblr.com/docs/en/custom_themes#group-blogs)
 * Comment System ([Disqus](https://disqus.com/))
+* [Group Blogs](https://www.tumblr.com/docs/en/custom_themes#group-blogs)
+* [Notes](https://www.tumblr.com/docs/en/custom_themes#notes)
+* [Srcset Attribute](http://caniuse.com/#search=srcset)
 
 (Intentionally not included to remain flexible in the various uses for a theme.)
-
-
 
 ###Caveats
 
