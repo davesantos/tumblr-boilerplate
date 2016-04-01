@@ -20,7 +20,7 @@
 
      -->
   {/block:Hidden}
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css" type="text/css" media="all">
   <style type="text/css">
     /*Tumblr Global Appearance */
     body {background:{BackgroundColor};}
@@ -111,7 +111,7 @@
       {block:Photoset}
         <figure{block:Caption} class="with-caption"{/block:Caption}>
           {block:Photos}
-          <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+          <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}" width="{PhotoWidth-HighRes}" height="{PhotoHeight-HighRes}">
           {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
           {/block:Photos}
           {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
