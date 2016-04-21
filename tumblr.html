@@ -6,17 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
   {block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
+
   <link rel="apple-touch-icon" href="{PortraitURL-128}">
   <link rel="shortcut icon" href="{Favicon}">
   <link rel="canonical" href="{block:IndexPage}{BlogURL}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}">
   <link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+  <meta property="og:title" content="{Title}">
+  <meta property="og:url" content="{BlogURL}">
+  <meta property="og:image" content="{PortraitURL-128}">
+  <meta property="og:type" content="tumblr-feed:tumblelog">
+
   {block:Hidden}
     <!--
 
       Custom theme options in the 'Hidden' block will not show when viewing the source code.
       https://www.tumblr.com/docs/en/custom_themes#theme-options
-
-     <meta name="text:Twitter Username" content=""/>
 
      -->
   {/block:Hidden}
