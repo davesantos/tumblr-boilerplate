@@ -36,7 +36,9 @@ __Theme does not support__
 
 ###Caveats
 
-Tumblr will auto-inject inline code (such as [Open Graph Protocol](http://ogp.me/), [Twitter Cards](https://dev.twitter.com/cards/overview) & javascript) into the final output of your page. This is out of the developers' control. Running it through a HTML Validator or Page Speed may spit out warnings & errors.
+Tumblr will auto-inject code (such as [Open Graph Protocol](http://ogp.me/), [Twitter Cards](https://dev.twitter.com/cards/overview) & javascript) into the final result for your page. This is out of the developers' control. Running it through a HTML Validator or Page Speed may spit out warnings & errors.
+
+(Tumblr injects `<!DOCTYPE html>`, twice!)
 
 ###Resources
 * [tumblr.com/developers](https://www.tumblr.com/developers)
