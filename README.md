@@ -20,7 +20,7 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 ### Features
 
 * HTML5 tags
-* [Normalize CSS](http://necolas.github.com/normalize.css/) from a CDN
+* [Normalize.css](http://necolas.github.com/normalize.css/) from [cdnjs](https://cdnjs.com/)
 * Supports all [post](https://www.tumblr.com/docs/en/custom_themes#posts) types
 * Theme options from [global appeareance](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
 * [Localization] (http://www.tumblr.com/docs/en/custom_themes#localization) strings
@@ -44,7 +44,6 @@ Tumblr will auto-inject code (such as [Open Graph Protocol](http://ogp.me/), [Tw
 * [tumblr.com/developers](https://www.tumblr.com/developers)
 * [Tumblr Developer Blog](http://developers.tumblr.com/)
 * [Custom Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
-* [Tumblr assets hosting](http://www.tumblr.com/themes/upload_static_file)
 * [HTML 5 Boilerplate] (http://html5boilerplate.com/)
 
 ###License
