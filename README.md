@@ -6,7 +6,7 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 ###Getting Started
 
 1. Choose an [Installation](#install) method.
-2. Modify tumblr.html with your favorite code editor.
+2. Modify `tumblr.html` with your favorite code editor.
 3. Publish it by going to `http://tumblr.com/customize/{your_blog_name}`.
 4. Click *Edit HTML* on the left column.
 5. Copy & paste your customized code then click *Save*.
