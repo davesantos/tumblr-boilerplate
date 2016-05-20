@@ -171,9 +171,10 @@
         <div class="replies">{Replies}</div>
       {/block:Answer}
 
+      {LikeButton color="grey"}
+      {ReblogButton color="grey"}
+
       {block:IndexPage}
-        {LikeButton color="grey"}
-        {ReblogButton color="grey"}
         <p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>
       {/block:IndexPage}
 
@@ -201,7 +202,7 @@
     {/block:Pagination}
   </main>
   <footer class="footer">
-    <small>{block:ShowTitle}{Title} {/block:ShowTitle}&copy; {CopyrightYears}</small>
+    <p><small>{block:ShowTitle}{Title} {/block:ShowTitle}&copy; {CopyrightYears}</small></p>
   </footer>
 </body>
 </html>
