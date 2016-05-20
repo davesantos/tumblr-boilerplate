@@ -1,4 +1,4 @@
-Tumblr Boilerplate - 2.0.3
+Tumblr Boilerplate - 2.0.4
 ------
 
 A fully functional bare-bones Tumblr theme that works out of the box. Style it to your needs. The goal of the project was to remove uncessary code easing the development process.
