@@ -40,6 +40,22 @@ Tumblr will auto-inject code (such as [Open Graph Protocol](http://ogp.me/), [Tw
 
 (Tumblr injects `<!DOCTYPE html>`, twice!)
 
+###Optional Snippets
+
+[Open Graph Protocol](http://ogp.me/). If you choose not to include this in the `<head>`, Tumblr is auto-generate it for you.
+
+```
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+```
+And this:
+
+```
+  <meta property="og:site_name" content="{Title}">
+  <meta property="og:url" content="{BlogURL}">
+  <meta property="og:image" content="{PortraitURL-128}">
+  <meta property="og:type" content="tumblr-feed:tumblelog">
+```
+
 ###Resources
 * [Custom Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
 * [tumblr.com/developers](https://www.tumblr.com/developers)
