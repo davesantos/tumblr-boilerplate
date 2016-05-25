@@ -1,7 +1,26 @@
-Tumblr Boilerplate - 2.0.4
+Tumblr Boilerplate
 ------
 
-A fully functional bare-bones Tumblr theme that works out of the box. Style it to your needs. The goal of the project was to remove uncessary code easing the development process.
+> A fully functional bare-bones Tumblr theme that works out of the box. Style it to your needs. The goal of the project was to remove uncessary code easing the development process.
+
+### <a name="install"></a>Installation
+
+**Bower**
+
+```sh
+bower install tumblr-boilerplate
+```
+
+**Git**
+
+```sh
+git clone https://github.com/davesantos/tumblr-boilerplate.git`
+```
+
+**Download**
+
+[Source](https://raw.githubusercontent.com/davesantos/tumblr-boilerplate/master/tumblr.html)
+[Zip](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip)
 
 ###Getting Started
 
@@ -11,11 +30,6 @@ A fully functional bare-bones Tumblr theme that works out of the box. Style it t
 4. Click *Edit HTML* on the left column.
 5. Copy & paste your customized code then click *Save*.
 
-### <a name="install"></a>Installation
-
-* [Bower](http://bower.io/): `bower install tumblr-boilerplate`
-* [Github] (https://github.com): `git clone https://github.com/davesantos/tumblr-boilerplate.git`
-* [Download](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip).
 
 ### Features
 
