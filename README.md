@@ -14,7 +14,7 @@ bower install tumblr-boilerplate
 **Git**
 
 ```sh
-git clone https://github.com/davesantos/tumblr-boilerplate.git`
+git clone https://github.com/davesantos/tumblr-boilerplate.git
 ```
 
 **Download**
