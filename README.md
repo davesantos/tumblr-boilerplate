@@ -19,8 +19,8 @@ git clone https://github.com/davesantos/tumblr-boilerplate.git`
 
 **Download**
 
-[Source](https://raw.githubusercontent.com/davesantos/tumblr-boilerplate/master/tumblr.html)
-[Zip](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip)
+- [Source](https://raw.githubusercontent.com/davesantos/tumblr-boilerplate/master/tumblr.html)
+- [Zip](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip)
 
 ###Getting Started
 
