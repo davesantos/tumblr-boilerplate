@@ -57,7 +57,7 @@ Tumblr will auto-inject code (such as [Open Graph Protocol](http://ogp.me/), [Tw
 ###Optional Snippets
 
 [Open Graph Protocol](http://ogp.me/)<br>
-If you choose **not** to include this in your `<head>`, Tumblr will auto-generate it against your will! __Isn't that great!__
+If you choose **not** to include this in your `<head>`, Tumblr will auto-generate it against your will! _Isn't that great!_
 
 ```
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
