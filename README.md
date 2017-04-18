@@ -22,7 +22,7 @@ git clone https://github.com/davesantos/tumblr-boilerplate.git
 - [Source](https://raw.githubusercontent.com/davesantos/tumblr-boilerplate/master/tumblr.html)
 - [Zip](https://github.com/davesantos/tumblr-boilerplate/archive/master.zip)
 
-###Getting Started
+### Getting Started
 
 1. Choose an [Installation](#install) method.
 2. Modify `tumblr.html` with your favorite code editor.
@@ -48,13 +48,13 @@ __Theme does not support__
 
 (Intentionally not included to remain flexible in the various uses for a theme.)
 
-###Caveats
+### Caveats
 
 Tumblr will auto-inject code (such as [Open Graph Protocol](http://ogp.me/), [Twitter Cards](https://dev.twitter.com/cards/overview) & javascript) into the final result for your page. This is out of the theme developers' control. Running it through a HTML Validator or Page Speed may spit out warnings & errors.
 
 (Tumblr injects `<!DOCTYPE html>`, twice!)
 
-###Optional Snippets
+### Optional Snippets
 
 [Open Graph Protocol](http://ogp.me/)<br>
 If you choose **not** to include this in your `<head>`, Tumblr will auto-generate it against your will! _Isn't that great!?_
@@ -71,13 +71,13 @@ And this:
   <meta property="og:type" content="tumblr-feed:tumblelog">
 ```
 
-###Resources
+### Resources
 * [Custom Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
 * [tumblr.com/developers](https://www.tumblr.com/developers)
 * [Tumblr Developer Blog](http://developers.tumblr.com/)
 * [HTML 5 Boilerplate] (http://html5boilerplate.com/)
 
-###License
+### License
 
 [MIT](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md)
 
