@@ -1,3 +1,5 @@
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md)
+
 Tumblr Boilerplate
 ------
 
@@ -75,11 +77,5 @@ And this:
 * [Custom Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
 * [tumblr.com/developers](https://www.tumblr.com/developers)
 * [Tumblr Developer Blog](http://developers.tumblr.com/)
-* [HTML 5 Boilerplate] (http://html5boilerplate.com/)
-
-###License
-
-[MIT](https://github.com/davesantos/tumblr-boilerplate/blob/master/LICENSE.md)
-
-
+* [HTML 5 Boilerplate](http://html5boilerplate.com/)
 
