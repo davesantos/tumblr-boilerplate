@@ -26,9 +26,9 @@ git clone https://github.com/davesantos/tumblr-boilerplate.git
 
 ### Getting Started
 
-1. Choose an [Installation](#installation) method.
+1. Choose an [installation](#installation) method.
 2. Modify `tumblr.html` with your favorite code editor.
-3. Publish it by going to `https://www.tumblr.com/customize/{your_blog_name}`.
+3. Publish it by going to https://www.tumblr.com/customize
 4. Click *Edit HTML* on the left column.
 5. Copy & paste your customized code then click *Save*.
 
