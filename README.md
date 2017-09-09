@@ -28,7 +28,7 @@ git clone https://github.com/davesantos/tumblr-boilerplate.git
 
 1. Choose an [Installation](#install) method.
 2. Modify `tumblr.html` with your favorite code editor.
-3. Publish it by going to `http://tumblr.com/customize/{your_blog_name}`.
+3. Publish it by going to `https://www.tumblr.com/customize/{your_blog_name}`.
 4. Click *Edit HTML* on the left column.
 5. Copy & paste your customized code then click *Save*.
 
@@ -36,17 +36,17 @@ git clone https://github.com/davesantos/tumblr-boilerplate.git
 ### Features
 
 * HTML5 tags
-* [Normalize.css](http://necolas.github.com/normalize.css/) from [cdnjs](https://cdnjs.com/)
+* [Normalize.css](https://necolas.github.io/normalize.css/) from [cdnjs](https://cdnjs.com/)
 * Supports all [post](https://www.tumblr.com/docs/en/custom_themes#posts) types
 * Theme options from [global appeareance](https://www.tumblr.com/docs/en/custom_themes#global_appearance)
-* [Localization] (http://www.tumblr.com/docs/en/custom_themes#localization) strings
+* [Localization] (https://www.tumblr.com/docs/en/custom_themes#localization) strings
 
 __Theme does not support__
 
 * Comment System ([Disqus](https://disqus.com/))
 * [Group Blogs](https://www.tumblr.com/docs/en/custom_themes#group-blogs)
 * [Notes](https://www.tumblr.com/docs/en/custom_themes#notes)
-* [Srcset Attribute](http://caniuse.com/#search=srcset)
+* [Srcset Attribute](https://caniuse.com/#search=srcset)
 
 (Intentionally not included to remain flexible in the various uses for a theme.)
 
@@ -74,7 +74,7 @@ And this:
 ```
 
 ### Resources
-* [Custom Theme Documentation](http://www.tumblr.com/docs/en/custom_themes)
+* [Custom Theme Documentation](https://www.tumblr.com/docs/en/custom_themes)
 * [tumblr.com/developers](https://www.tumblr.com/developers)
 * [Tumblr Developer Blog](http://developers.tumblr.com/)
-* [HTML 5 Boilerplate](http://html5boilerplate.com/)
+* [HTML 5 Boilerplate](https://html5boilerplate.com)
