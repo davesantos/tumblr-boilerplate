@@ -2,13 +2,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
   {block:Description}<meta name="description" content="{MetaDescription}">{/block:Description}
 
   <link rel="apple-touch-icon" href="{PortraitURL-128}">
-  <link rel="shortcut icon" href="{Favicon}">
+  <link rel="icon" href="{PortraitURL-128}">
   <link rel="canonical" href="{block:IndexPage}{BlogURL}{/block:IndexPage}{block:PermalinkPage}{Permalink}{/block:PermalinkPage}">
   <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
@@ -20,9 +20,9 @@
 
      -->
   {/block:Hidden}
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css" type="text/css" media="all">
-  <style type="text/css">
-    /*Tumblr Global Appearance */
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous">
+  <style>
+    /* Tumblr Global Appearance */
     body {background:{BackgroundColor};}
     h1 > a {color:{TitleColor};}
     a {color:{AccentColor}}
@@ -120,7 +120,7 @@
 
       {block:Panorama}
         <figure{block:Caption} class="with-caption"{/block:Caption}>
-          {LinkOpenTag}<img src="{PhotoURL-Panorama}" width="{PhotoWidth-Panorama}" height="{PhotoHeight-Panorama}" alt="{PhotoAlt}" />{LinkCloseTag}
+          {LinkOpenTag}<img src="{PhotoURL-Panorama}" width="{PhotoWidth-Panorama}" height="{PhotoHeight-Panorama}" alt="{PhotoAlt}">{LinkCloseTag}
           {block:Caption}<figcaption class="caption">{Caption}</figcaption>{/block:Caption}
         </figure>
       {/block:Panorama}
