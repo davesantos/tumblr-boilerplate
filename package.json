@@ -1,0 +1,19 @@
+{
+  "name": "tumblr-boilerplate",
+  "version": "2.0.4",
+  "description": "A true bare bones Tumblr theme for a quick jump-start",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davesantos/tumblr-boilerplate.git"
+  },
+  "keywords": [
+    "tumblr",
+    "tumblr-boilerplate"
+  ],
+  "author": "Dave Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davesantos/tumblr-boilerplate/issues"
+  },
+  "homepage": "https://github.com/davesantos/tumblr-boilerplate#readme"
+}
